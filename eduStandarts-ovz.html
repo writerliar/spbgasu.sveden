@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сведения об образовательной организации</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sveden-base.css" rel="stylesheet">
+    <link href="./css/sveden-special.css" rel="stylesheet">
+    <link href="./css/sveden-style.css" rel="stylesheet">
+    <link href="./css/style-table.css" rel="stylesheet">
+    <link href="./css/sveden-special-table.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg style="display:none">
+        <symbol id="icon-pdf" viewBox="0 0 128 128">
+            <path d="M95.21 80.32c-.07-.51-.48-1.15-.92-1.58-1.26-1.24-4.03-1.89-8.25-1.95-2.86-.03-6.3.22-9.92.73-1.62-.93-3.29-1.95-4.6-3.18-3.53-3.29-6.47-7.86-8.31-12.89.12-.47.22-.88.32-1.3 0 0 1.98-11.28 1.46-15.1-.07-.52-.12-.67-.26-1.08l-.17-.44c-.54-1.25-1.6-2.57-3.26-2.5l-.98-.03h-.02c-1.86 0-3.36.95-3.76 2.36-1.2 4.44.04 11.09 2.29 19.69l-.58 1.4c-1.61 3.94-3.63 7.9-5.41 11.39l-.23.45c-1.88 3.67-3.58 6.79-5.13 9.43l-1.59.84c-.12.06-2.85 1.51-3.49 1.89-5.43 3.25-9.03 6.93-9.63 9.85-.19.94-.05 2.13.92 2.68l1.54.78c.67.33 1.38.5 2.1.5 3.87 0 8.36-4.82 14.55-15.62 7.14-2.32 15.28-4.26 22.41-5.32 5.43 3.05 12.11 5.18 16.33 5.18.75 0 1.4-.07 1.92-.21.81-.22 1.49-.68 1.91-1.3.82-1.23.98-2.93.76-4.67zM36.49 99.33c.7-1.93 3.5-5.75 7.63-9.13.26-.21.9-.81 1.48-1.37-4.32 6.89-7.21 9.63-9.11 10.5zM60.95 43c1.24 0 1.95 3.13 2.01 6.07.06 2.94-.63 5-1.48 6.53-.71-2.26-1.05-5.82-1.05-8.15 0 0-.05-4.45.52-4.45zm-7.3 40.14c.87-1.55 1.77-3.19 2.69-4.92 2.25-4.25 3.67-7.57 4.72-10.3 2.1 3.82 4.72 7.07 7.79 9.67.39.32.8.65 1.22.98-6.25 1.23-11.66 2.74-16.42 4.57zm39.43-.35c-.38.23-1.47.37-2.17.37-2.26 0-5.07-1.03-9-2.72 1.51-.11 2.9-.17 4.14-.17 2.27 0 2.94-.01 5.17.56 2.22.57 2.25 1.72 1.86 1.96z" fill="#ff402f" />
+            <path d="M104 80c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm10.882 16.988l-.113.176-8.232 11.438c-.548.866-1.508 1.398-2.537 1.398s-1.989-.532-2.536-1.397l-8.346-11.614a3.01 3.01 0 0 1 .01-2.994 3.01 3.01 0 0 1 2.596-1.494H100V86c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v6.5h4.276c1.065 0 2.061.572 2.596 1.494a3.01 3.01 0 0 1 .01 2.994z" fill="#ff402f" />
+            <path fill="#ff9a30" d="M84 125.95l-.05.05H84zM114 77v-.05l-.05.05z" />
+            <path d="M111.071 44.243L71.757 4.929A9.936 9.936 0 0 0 64.687 2H24c-5.514 0-10 4.486-10 10v104c0 5.514 4.486 10 10 10h59.95l-4-4H24c-3.309 0-6-2.691-6-6V12c0-3.309 2.691-6 6-6h40.687c1.603 0 3.109.624 4.242 1.757l39.314 39.314A6.044 6.044 0 0 1 110 51.313V72.95l4 4V51.313c0-2.67-1.04-5.181-2.929-7.07z" fill="#ff402f" />
+            <path fill="#fff" d="M113.95 77l.05-.05-4-4" />
+        </symbol>
+    </svg>
+    <div id="wrapper" style="display: block;">
+
+        <div class="container-fluid">
+            <div class="header" id="header">
+                <h1 id="organization_name">Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный архитектурно-строительный университет»</h1>
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="">
+                                <a href="/">
+                                    Главная <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Сведения об образовательной организации <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="common-ovz.html">Основные сведения</a></li>
+                                    <li><a href="struct-ovz.html">Структура и органы управления образовательной организацией</a></li>
+                                    <li><a href="document-ovz.html">Документы</a></li>
+                                    <li><a href="education-ovz.html">Образование</a></li>
+                                    <li><a href="eduStandarts-ovz.html">Образовательные стандарты</a></li>
+                                    <li><a href="employees-ovz.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
+                                    <li><a href="objects-ovz.html">Материально-техническое обеспечение и оснащённость образовательного процесса</a></li>
+                                    <li><a href="grants-ovz.html">Стипендии и иные виды материальной поддержки</a></li>
+                                    <li><a href="paid_edu-ovz.html">Платные образовательные услуги</a></li>
+                                    <li><a href="budget-ovz.html">Финансово-хозяйственная деятельность</a></li>
+                                    <li><a href="vacant-ovz.html">Вакантные места для приема (перевода)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li itemprop="Copy">
+                                <a href="eduStandarts.html" class="accessability">
+                                    Обычная версия
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section">
+
+                <div class="form-group content" id="content" style="width: 100%">
+                    <h2 id="page_content_header">
+                        Образовательные стандарты
+                    </h2>
+                    <div class="page_content">
+                        <div>
+                            <div id="documents" itemprop="eduStandartDoc">
+                                <div class="spoiler-block">
+                                    <a href="#" class="spoiler-title">Бакалавриат</a>
+                                    <div class="spoiler-content" style="display: none; padding:15px 20px;">
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_01.03.02.pdf" title="01.03.02 Прикладная математика и информатика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            01.03.02 Прикладная математика и информатика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_01.03.04.pdf" title="01.03.04 Прикладная математика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            01.03.04 Прикладная математика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/FGOS_07.03.01.pdf" title="07.03.01 Архитектура" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.03.01 Архитектура</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/FGOS_07.03.02.pdf" title="07.03.02 Реконструкция и реставрация архитектурного наследия" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.03.02 Реконструкция и реставрация архитектурного наследия</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/FGOS_07.03.03.pdf" title="07.03.03 Дизайн архитектурной среды" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.03.03 Дизайн архитектурной среды</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_07.03.04.pdf" title="07.03.04 Градостроительство" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.03.04 Градостроительство</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_08.03.01.pdf" title="08.03.01 Строительство" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            08.03.01 Строительство</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/fgos_13.03.01.pdf" title="13.03.01 Теплоэнергетика и теплотехника" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            13.03.01 Теплоэнергетика и теплотехника</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/fgos_13.03.02.pdf" title="13.03.02 Электроэнергетика и электротехника" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            13.03.02 Электроэнергетика и электротехника</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_15.03.03.pdf" title="15.03.03 Прикладная механика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            15.03.03 Прикладная механика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_20.03.01.pdf" title="20.03.01 Техносферная безопасность" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            20.03.01 Техносферная безопасность</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/fgos_21.03.02.pdf" title="21.03.02 Землеустройство и кадастры" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            21.03.02 Землеустройство и кадастры</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_23.03.01.pdf" title="23.03.01 Технология транспортных процессов" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.03.01 Технология транспортных процессов</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_23.03.02.pdf" title="23.03.02 Наземные транспортно-технологические комплексы" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.03.02 Наземные транспортно-технологические комплексы</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/FGOS_23.03.03.pdf" title="23.03.03 Эксплуатация транспортно-технологических машин и комплексов" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.03.03 Эксплуатация транспортно-технологических машин и комплексов</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/fgos_27.03.01.pdf" title="27.03.01 Стандартизация и метрология" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            27.03.01 Стандартизация и метрология</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_35.03.10.pdf" title="35.03.10 Ландшафтная архитектура" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            35.03.10 Ландшафтная архитектура</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/FGOS_38.03.01.pdf" title="38.03.01 Экономика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.03.01 Экономика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_38.03.02.pdf" title="38.03.02 Менеджмент" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.03.02 Менеджмент</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_40.03.01.pdf" title="40.03.01 Юриспруденция" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            40.03.01 Юриспруденция</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_54.03.04.pdf" title="54.03.04 Реставрация" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            54.03.04 Реставрация</a>
+                                    </div>
+                                </div>
+                                <div class="spoiler-block">
+                                    <a href="#" class="spoiler-title">Специалитет</a>
+                                    <div class="spoiler-content" style="display: none; padding:15px 20px;">
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_08.05.01.pdf" title="08.05.01 Строительство уникальных зданий и сооружений" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            08.05.01 Строительство уникальных зданий и сооружений</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/23092016/FGOS_08.05.02.pdf" title="08.05.02 Строительство, эксплуатация, восстановление и техническое прикрытие дорог, мостов и тоннелей" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            08.05.02 Строительство, эксплуатация, восстановление и техническое прикрытие дорог, мостов и тоннелей</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_23.05.01.pdf" title="23.05.01 Наземные транспортно-технологические средства" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.05.01 Наземные транспортно-технологические средства</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos/FOS_38.05.01.pdf" title="38.05.01 Экономическая безопасность" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.05.01 Экономическая безопасность</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos/FGOS_40.05.01.pdf" title="40.05.01 Правовое обеспечение национальной безопасности" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            40.05.01 Правовое обеспечение национальной безопасности</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_40.05.03.pdf" title="40.05.03 Судебная экспертиза" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            40.05.03 Судебная экспертиза</a>
+                                    </div>
+                                </div>
+                                <div class="spoiler-block">
+                                    <a href="#" class="spoiler-title">Магистратура</a>
+                                    <div class="spoiler-content" style="display: none; padding:15px 20px;">
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/23092016/01.04.02_fgos.pdf" title="01.04.02 Прикладная математика и информатика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            01.04.02 Прикладная математика и информатика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2015/fgos/fgos__07.04.01.pdf" title="07.04.01 Архитектура" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.04.01 Архитектура</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2013/gos_standart/FGOS_07.04.02.pdf" title="07.04.02 Реконструкция и реставрация архитектурного наследия" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.04.02 Реконструкция и реставрация архитектурного наследия</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2013/prikaz_ob_utv/FGOS_07.04.03.pdf" title="07.04.03 Дизайн архитектурной среды" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.04.03 Дизайн архитектурной среды</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2013/prikaz_ob_utv/FGOS_07.04.04.pdf" title="07.04.04 Градостроительство" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.04.04 Градостроительство</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/FGOS_08.04.01.pdf" title="08.04.01 Строительство" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            08.04.01 Строительство</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/FGOS_13.04.01.pdf" title="13.04.01 Теплоэнергетика и теплотехника" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            13.04.01 Теплоэнергетика и теплотехника</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2013/gos_standart/FGOS_13.04.02.pdf" title="13.04.02 Электроэнергетика и электротехника" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            13.04.02 Электроэнергетика и электротехника</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_150403.pdf" title="15.04.03 Прикладная механика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            15.04.03 Прикладная механика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/23092016/20.04.01_fgos.pdf" title="20.04.01 Техносферная безопасность" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            20.04.01 Техносферная безопасность</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2016_new_180516/23092016/20.04.02_fgos.pdf" title="20.04.02 Природообустройство и водопользование" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            20.04.02 Природообустройство и водопользование</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/plan/FGOS_21.04.02.pdf" title="21.04.02 Землеустройство и кадастры" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            21.04.02 Землеустройство и кадастры</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/plan/FGOS_23.04.01.pdf" title="23.04.01 Технология транспортных процессов" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.04.01 Технология транспортных процессов</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos/fgos_23.04.02.pdf" title="23.04.02 Наземные транспортно-технологические комплексы" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.04.02 Наземные транспортно-технологические комплексы</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos/fgos_23.04.03.pdf" title="23.04.03 Эксплуатация транспортно-технологических машин и комплексов" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.04.03 Эксплуатация транспортно-технологических машин и комплексов</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/prog_vpo/FGOS_27.04.01.pdf" title="27.04.01 Стандартизация и метрология" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            27.04.01 Стандартизация и метрология</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/2013/gos_standart/FGOS_27.04.05.pdf" title="27.04.05 Инноватика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            27.04.05 Инноватика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/plan/FGOS_38.04.01.pdf" title="38.04.01 Экономика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.04.01 Экономика</a>
+                                        <a href="http://www.spbgasu.ru/upload-files/obrazovatdejatelnost/ucheb_rab/fgos_2017/FGOS_38.04.02.pdf" title="38.04.02 Менеджмент" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.04.02 Менеджмент</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_03.09.00.pdf" title="40.04.01 Юриспруденция" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            40.04.01 Юриспруденция</a>
+                                    </div>
+                                </div>
+                                <div class="spoiler-block">
+                                    <a href="#" class="spoiler-title">Аспирантура</a>
+                                    <div class="spoiler-content" style="display: none; padding:15px 20px;">
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_07.06.01.pdf" title="07.06.01 Архитектура" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            07.06.01 Архитектура</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_08.06.01.pdf" title="08.06.01 Техника и технологии строительства" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            08.06.01 Техника и технологии строительства</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_09.06.01.pdf" title="09.06.01 Информатика и вычислительная техника" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            09.06.01 Информатика и вычислительная техника</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_15.06.01.pdf" title="15.06.01 Машиностроение" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            15.06.01 Машиностроение</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_23.06.01.pdf" title="23.06.01 Техника и технологии наземного транспорта" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            23.06.01 Техника и технологии наземного транспорта</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_37.06.01.pdf" title="37.06.01 Психологические науки" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            37.06.01 Психологические науки</a>
+                                        <a href="http://doc.spbgasu.ru/study/fgos/fgos_38.06.01.pdf" title="38.06.01 Экономика" target="_blank" class="inner-link-pdf-blue">
+                                            <svg class="icon" width="17" height="17">
+                                                <use xlink:href="#icon-pdf"></use>
+                                            </svg>
+                                            38.06.01 Экономика</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.spoiler-title').click(function() {
+                $(this).parent().children('div.spoiler-content').toggle('fast');
+                return false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

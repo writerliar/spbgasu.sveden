@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сведения об образовательной организации</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sveden-base.css" rel="stylesheet">
+    <link href="./css/sveden-style.css" rel="stylesheet">
+    <link href="./css/style-table.css" rel="stylesheet">
+    <base target="_blank">
+</head>
+
+<body>
+    <svg style="display:none">
+        <symbol id="icon-pdf" viewBox="0 0 128 128">
+            <path d="M95.21 80.32c-.07-.51-.48-1.15-.92-1.58-1.26-1.24-4.03-1.89-8.25-1.95-2.86-.03-6.3.22-9.92.73-1.62-.93-3.29-1.95-4.6-3.18-3.53-3.29-6.47-7.86-8.31-12.89.12-.47.22-.88.32-1.3 0 0 1.98-11.28 1.46-15.1-.07-.52-.12-.67-.26-1.08l-.17-.44c-.54-1.25-1.6-2.57-3.26-2.5l-.98-.03h-.02c-1.86 0-3.36.95-3.76 2.36-1.2 4.44.04 11.09 2.29 19.69l-.58 1.4c-1.61 3.94-3.63 7.9-5.41 11.39l-.23.45c-1.88 3.67-3.58 6.79-5.13 9.43l-1.59.84c-.12.06-2.85 1.51-3.49 1.89-5.43 3.25-9.03 6.93-9.63 9.85-.19.94-.05 2.13.92 2.68l1.54.78c.67.33 1.38.5 2.1.5 3.87 0 8.36-4.82 14.55-15.62 7.14-2.32 15.28-4.26 22.41-5.32 5.43 3.05 12.11 5.18 16.33 5.18.75 0 1.4-.07 1.92-.21.81-.22 1.49-.68 1.91-1.3.82-1.23.98-2.93.76-4.67zM36.49 99.33c.7-1.93 3.5-5.75 7.63-9.13.26-.21.9-.81 1.48-1.37-4.32 6.89-7.21 9.63-9.11 10.5zM60.95 43c1.24 0 1.95 3.13 2.01 6.07.06 2.94-.63 5-1.48 6.53-.71-2.26-1.05-5.82-1.05-8.15 0 0-.05-4.45.52-4.45zm-7.3 40.14c.87-1.55 1.77-3.19 2.69-4.92 2.25-4.25 3.67-7.57 4.72-10.3 2.1 3.82 4.72 7.07 7.79 9.67.39.32.8.65 1.22.98-6.25 1.23-11.66 2.74-16.42 4.57zm39.43-.35c-.38.23-1.47.37-2.17.37-2.26 0-5.07-1.03-9-2.72 1.51-.11 2.9-.17 4.14-.17 2.27 0 2.94-.01 5.17.56 2.22.57 2.25 1.72 1.86 1.96z" fill="#ff402f" />
+            <path d="M104 80c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm10.882 16.988l-.113.176-8.232 11.438c-.548.866-1.508 1.398-2.537 1.398s-1.989-.532-2.536-1.397l-8.346-11.614a3.01 3.01 0 0 1 .01-2.994 3.01 3.01 0 0 1 2.596-1.494H100V86c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v6.5h4.276c1.065 0 2.061.572 2.596 1.494a3.01 3.01 0 0 1 .01 2.994z" fill="#ff402f" />
+            <path fill="#ff9a30" d="M84 125.95l-.05.05H84zM114 77v-.05l-.05.05z" />
+            <path d="M111.071 44.243L71.757 4.929A9.936 9.936 0 0 0 64.687 2H24c-5.514 0-10 4.486-10 10v104c0 5.514 4.486 10 10 10h59.95l-4-4H24c-3.309 0-6-2.691-6-6V12c0-3.309 2.691-6 6-6h40.687c1.603 0 3.109.624 4.242 1.757l39.314 39.314A6.044 6.044 0 0 1 110 51.313V72.95l4 4V51.313c0-2.67-1.04-5.181-2.929-7.07z" fill="#ff402f" />
+            <path fill="#fff" d="M113.95 77l.05-.05-4-4" />
+        </symbol>
+    </svg>
+
+    <div id="wrapper" style="display:block">
+
+        <div class="container-fluid">
+            <div class="header" id="header">
+                <h1 id="organization_name">Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный архитектурно-строительный университет»</h1>
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="">
+                                <a href="/">
+                                    Главная <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Сведения об образовательной организации <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="common.html">Основные сведения</a></li>
+                                    <li><a href="struct.html">Структура и органы управления образовательной организацией</a></li>
+                                    <li><a href="document.html">Документы</a></li>
+                                    <li><a href="education.html">Образование</a></li>
+                                    <li><a href="eduStandarts.html">Образовательные стандарты</a></li>
+                                    <li><a href="employees.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
+                                    <li><a href="objects.html">Материально-техническое обеспечение и оснащённость образовательного процесса</a></li>
+                                    <li><a href="grants.html">Стипендии и иные виды материальной поддержки</a></li>
+                                    <li><a href="paid_edu.html">Платные образовательные услуги</a></li>
+                                    <li><a href="budget.html">Финансово-хозяйственная деятельность</a></li>
+                                    <li><a href="vacant.html">Вакантные места для приема (перевода)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li itemprop="Copy">
+                                <a href="objects-ovz.html" class="accessibility">
+                                    Версия официального сайта для слабовидящих
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section">
+
+                <div class="form-group content" id="content" style="width: 100%">
+                    <h2 id="page_content_header">
+                        Материально-техническое обеспечение и оснащённость образовательного процесса
+                    </h2>
+                    <div class="page_content">
+
+                        <div class="table-wrapper">
+                            <h4>Cведения о наличии оборудованных учебных кабинетов</h4>
+                            <table class="table1 table-normalize table table-striped table-bordered" id="purpose_cabs">
+                                <tr class="table-title">
+                                    <th>Код</th>
+                                    <th>Наименование специальности, направления подготовки</th>
+                                    <th>Наименование дисциплины (модуля), практик в соответствии с учебным планом</th>
+                                    <th>Наименование специальных помещений и помещений для самостоятельной работы</th>
+                                    <th>Оснащенность специальных помещений и помещений для самостоятельной работы</th>
+                                    <th>Приспособленность помещений для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">01.03.02</td>
+                                    <td itemprop="eduName">Прикладная математика и информатика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">01.03.04</td>
+                                    <td itemprop="eduName">Прикладная математика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.03.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.03.02</td>
+                                    <td itemprop="eduName">Реконструкция и реставрация архитектурного наследия</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.03.03</td>
+                                    <td itemprop="eduName">Дизайн архитектурной среды</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.03.04</td>
+                                    <td itemprop="eduName">Градостроительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">08.03.01</td>
+                                    <td itemprop="eduName">Строительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">13.03.01</td>
+                                    <td itemprop="eduName">Теплоэнергетика и теплотехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">13.03.02</td>
+                                    <td itemprop="eduName">Электроэнергетика и электротехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">15.03.03</td>
+                                    <td itemprop="eduName">Прикладная механика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">20.03.01</td>
+                                    <td itemprop="eduName">Техносферная безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">20.03.02</td>
+                                    <td itemprop="eduName">Природообустройство и водопользование</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">21.03.02</td>
+                                    <td itemprop="eduName">Землеустройство и кадастры</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.03.01</td>
+                                    <td itemprop="eduName">Технология транспортных процессов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.03.02</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические комплексы</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.03.03</td>
+                                    <td itemprop="eduName">Эксплуатация транспортно-технологических машин и комплексов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">27.03.01</td>
+                                    <td itemprop="eduName">Стандартизация и метрология</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">27.03.02</td>
+                                    <td itemprop="eduName">Управление качеством</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">35.03.10</td>
+                                    <td itemprop="eduName">Ландшафтная архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.03.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.03.02</td>
+                                    <td itemprop="eduName">Менеджмент</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.03.10</td>
+                                    <td itemprop="eduName">Жилищное хозяйство и коммунальная инфраструктура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">40.03.01</td>
+                                    <td itemprop="eduName">Юриспруденция</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">08.05.01</td>
+                                    <td itemprop="eduName">Строительство уникальных зданий и сооружений</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">08.05.02</td>
+                                    <td itemprop="eduName">Строительство, эксплуатация, восстановление и техническое прикрытие дорог, мостов и тоннелей</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.05.01</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические средства</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.05.01</td>
+                                    <td itemprop="eduName">Экономическая безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">40.05.01</td>
+                                    <td itemprop="eduName">Правовое обеспечение национальной безопасности</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">40.05.03</td>
+                                    <td itemprop="eduName">Судебная экспертиза</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">01.04.02</td>
+                                    <td itemprop="eduName">Прикладная математика и информатика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.04.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.04.02</td>
+                                    <td itemprop="eduName">Реконструкция и реставрация архитектурного наследия</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.04.03</td>
+                                    <td itemprop="eduName">Дизайн архитектурной среды</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.04.04</td>
+                                    <td itemprop="eduName">Градостроительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">08.04.01</td>
+                                    <td itemprop="eduName">Строительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">13.04.01</td>
+                                    <td itemprop="eduName">Теплоэнергетика и теплотехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">13.04.02</td>
+                                    <td itemprop="eduName">Электроэнергетика и электротехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">15.04.03</td>
+                                    <td itemprop="eduName">Прикладная механика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">20.04.01</td>
+                                    <td itemprop="eduName">Техносферная безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">20.04.02</td>
+                                    <td itemprop="eduName">Природообустройство и водопользование</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">21.04.02</td>
+                                    <td itemprop="eduName">Землеустройство и кадастры</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.04.01</td>
+                                    <td itemprop="eduName">Технология транспортных процессов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.04.02</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические комплексы</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.04.03</td>
+                                    <td itemprop="eduName">Эксплуатация транспортно-технологических машин и комплексов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">27.04.01</td>
+                                    <td itemprop="eduName">Стандартизация и метрология</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">27.04.02</td>
+                                    <td itemprop="eduName">Управление качеством</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">27.04.05</td>
+                                    <td itemprop="eduName">Инноватика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.04.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.04.02</td>
+                                    <td itemprop="eduName">Менеджмент</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.04.10</td>
+                                    <td itemprop="eduName">Жилищное хозяйство и коммунальная инфраструктура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">40.04.01</td>
+                                    <td itemprop="eduName">Юриспруденция</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">07.06.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">08.06.01</td>
+                                    <td itemprop="eduName">Техника и технологии строительства</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">09.06.01</td>
+                                    <td itemprop="eduName">Информатика и вычислительная техника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">15.06.01</td>
+                                    <td itemprop="eduName">Машиностроение</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">23.06.01</td>
+                                    <td itemprop="eduName">Техника и технологии наземного транспорта</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">37.06.01</td>
+                                    <td itemprop="eduName">Психологические науки</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeCab">
+                                    <td itemprop="eduCode">38.06.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposeCabOvz">Приспособлено</td>
+                                </tr>
+                            </table>
+                            <button data-table="table1" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <h4>Cведения о наличии объектов для проведения практических занятий</h4>
+                            <table class="table2 table-normalize table table-striped table-bordered" id="purpose_pracs">
+                                <tr class="table-title">
+                                    <th>Код</th>
+                                    <th>Наименование специальности, направления подготовки</th>
+                                    <th>Наименование дисциплины (модуля), практик в соответствии с учебным планом</th>
+                                    <th>Наименование специальных помещений и помещений для самостоятельной работы</th>
+                                    <th>Оснащенность специальных помещений и помещений для самостоятельной работы</th>
+                                    <th>Приспособленность помещений для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">01.03.02</td>
+                                    <td itemprop="eduName">Прикладная математика и информатика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">01.03.04</td>
+                                    <td itemprop="eduName">Прикладная математика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.03.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.03.02</td>
+                                    <td itemprop="eduName">Реконструкция и реставрация архитектурного наследия</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.03.03</td>
+                                    <td itemprop="eduName">Дизайн архитектурной среды</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.03.04</td>
+                                    <td itemprop="eduName">Градостроительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">08.03.01</td>
+                                    <td itemprop="eduName">Строительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">13.03.01</td>
+                                    <td itemprop="eduName">Теплоэнергетика и теплотехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">13.03.02</td>
+                                    <td itemprop="eduName">Электроэнергетика и электротехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">15.03.03</td>
+                                    <td itemprop="eduName">Прикладная механика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">20.03.01</td>
+                                    <td itemprop="eduName">Техносферная безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">20.03.02</td>
+                                    <td itemprop="eduName">Природообустройство и водопользование</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">21.03.02</td>
+                                    <td itemprop="eduName">Землеустройство и кадастры</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.03.01</td>
+                                    <td itemprop="eduName">Технология транспортных процессов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.03.02</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические комплексы</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.03.03</td>
+                                    <td itemprop="eduName">Эксплуатация транспортно-технологических машин и комплексов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">27.03.01</td>
+                                    <td itemprop="eduName">Стандартизация и метрология</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">27.03.02</td>
+                                    <td itemprop="eduName">Управление качеством</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">35.03.10</td>
+                                    <td itemprop="eduName">Ландшафтная архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.03.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.03.02</td>
+                                    <td itemprop="eduName">Менеджмент</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.03.10</td>
+                                    <td itemprop="eduName">Жилищное хозяйство и коммунальная инфраструктура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">40.03.01</td>
+                                    <td itemprop="eduName">Юриспруденция</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">08.05.01</td>
+                                    <td itemprop="eduName">Строительство уникальных зданий и сооружений</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">08.05.02</td>
+                                    <td itemprop="eduName">Строительство, эксплуатация, восстановление и техническое прикрытие дорог, мостов и тоннелей</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.05.01</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические средства</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.05.01</td>
+                                    <td itemprop="eduName">Экономическая безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">40.05.01</td>
+                                    <td itemprop="eduName">Правовое обеспечение национальной безопасности</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">40.05.03</td>
+                                    <td itemprop="eduName">Судебная экспертиза</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">01.04.02</td>
+                                    <td itemprop="eduName">Прикладная математика и информатика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.04.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.04.02</td>
+                                    <td itemprop="eduName">Реконструкция и реставрация архитектурного наследия</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.04.03</td>
+                                    <td itemprop="eduName">Дизайн архитектурной среды</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.04.04</td>
+                                    <td itemprop="eduName">Градостроительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">08.04.01</td>
+                                    <td itemprop="eduName">Строительство</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">13.04.01</td>
+                                    <td itemprop="eduName">Теплоэнергетика и теплотехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">13.04.02</td>
+                                    <td itemprop="eduName">Электроэнергетика и электротехника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">15.04.03</td>
+                                    <td itemprop="eduName">Прикладная механика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">20.04.01</td>
+                                    <td itemprop="eduName">Техносферная безопасность</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">20.04.02</td>
+                                    <td itemprop="eduName">Природообустройство и водопользование</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">21.04.02</td>
+                                    <td itemprop="eduName">Землеустройство и кадастры</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.04.01</td>
+                                    <td itemprop="eduName">Технология транспортных процессов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.04.02</td>
+                                    <td itemprop="eduName">Наземные транспортно-технологические комплексы</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.04.03</td>
+                                    <td itemprop="eduName">Эксплуатация транспортно-технологических машин и комплексов</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">27.04.01</td>
+                                    <td itemprop="eduName">Стандартизация и метрология</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">27.04.02</td>
+                                    <td itemprop="eduName">Управление качеством</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">27.04.05</td>
+                                    <td itemprop="eduName">Инноватика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.04.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.04.02</td>
+                                    <td itemprop="eduName">Менеджмент</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.04.10</td>
+                                    <td itemprop="eduName">Жилищное хозяйство и коммунальная инфраструктура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">40.04.01</td>
+                                    <td itemprop="eduName">Юриспруденция</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">07.06.01</td>
+                                    <td itemprop="eduName">Архитектура</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">08.06.01</td>
+                                    <td itemprop="eduName">Техника и технологии строительства</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">09.06.01</td>
+                                    <td itemprop="eduName">Информатика и вычислительная техника</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">15.06.01</td>
+                                    <td itemprop="eduName">Машиностроение</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">23.06.01</td>
+                                    <td itemprop="eduName">Техника и технологии наземного транспорта</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">37.06.01</td>
+                                    <td itemprop="eduName">Психологические науки</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposePrac">
+                                    <td itemprop="eduCode">38.06.01</td>
+                                    <td itemprop="eduName">Экономика</td>
+                                    <td>Дисциплины согласно учебному плану</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td itemprop="purposePracOvz">Приспособлено</td>
+                                </tr>
+                            </table>
+                            <button data-table="table2" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <h4>Cведения о наличии библиотек</h4>
+                            <table class="table3 table-normalize table table-striped table-bordered" id="purpose_librs">
+                                <tr class="table-title">
+                                    <th style="width: 25%;">Вид помещения</th>
+                                    <th style="width: 25%;">Адрес места нахождения</th>
+                                    <th style="width: 5%;">Площадь, м кв.</th>
+                                    <th style="width: 5%;">Количество мест</th>
+                                    <th style="width: 40%;">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                </tr>
+                                <tr itemprop="purposeLibr">
+                                    <td>Научно-техническая библиотека Санкт-Петербургского государственного архитектурно-строительного университета</td>
+                                    <td>190005, Санкт-Петербург, 2-я Красноармейская ул., д. 4</td>
+                                    <td>1813,6</td>
+                                    <td>253</td>
+                                    <td itemprop="purposeLibrOvz">Приспособлено</td>
+                                </tr>
+                            </table>
+                            <button data-table="table3" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <h4>Cведения о наличии объектов спорта</h4>
+                            <table class="table4 table-normalize table table-striped table-bordered" id="purpose_sports">
+                                <tr class="table-title">
+                                    <th style="width: 25%;">Вид помещения</th>
+                                    <th style="width: 25%;">Адрес места нахождения</th>
+                                    <th style="width: 5%;">Площадь, м кв.</th>
+                                    <th style="width: 5%;">Количество мест</th>
+                                    <th style="width: 40%;">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                </tr>
+                                <tr itemprop="purposeSport">
+                                    <td>Спортивный зал №1 ( зал бокса и аэробики)</td>
+                                    <td>Санкт-Петербург, 2-я Красноармейская ул., д.4</td>
+                                    <td>438,1</td>
+                                    <td>8 чел. на кв.м</td>
+                                    <td itemprop="purposeSportOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeSport">
+                                    <td>Спортивный зал №2 (зал спортивных игр)</td>
+                                    <td>Санкт-Петербург, ул. Курляндская, д.2/5</td>
+                                    <td>555,2</td>
+                                    <td>15-20 чел. на кв.м.</td>
+                                    <td itemprop="purposeSportOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeSport">
+                                    <td>Спортивный зал №3 (зал борьбы)</td>
+                                    <td>Санкт-Петербург, 2-я Красноармейская ул., д.4</td>
+                                    <td>350,7</td>
+                                    <td>10 чел. на кв.м</td>
+                                    <td itemprop="purposeSportOvz">Приспособлено</td>
+                                </tr>
+                            </table>
+                            <button data-table="table4" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <h4>Cведения о наличии средств обучения и воспитания</h4>
+                            <table class="table5 table-normalize table table-striped table-bordered" id="purpose_facils">
+                                <tr class="table-title">
+                                    <th style="width: 25%;">Вид помещения</th>
+                                    <th style="width: 25%;">Адрес места нахождения</th>
+                                    <th style="width: 5%;">Площадь, м кв.</th>
+                                    <th style="width: 5%;">Количество мест</th>
+                                    <th style="width: 40%;">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание Главного учебного корпуса, 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>2694,55</td>
+                                    <td>1018</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание учебного корпуса "А", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>525,8</td>
+                                    <td>280</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание учебного корпуса "С", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>3270,7</td>
+                                    <td>2268</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание учебного корпуса "Е", 190005, г. Санкт-Петербург, ул. Егорова, д. 5/8, лит. А</td>
+                                    <td>1518,6</td>
+                                    <td>1064</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание учебного корпуса "5", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 5, лит. А</td>
+                                    <td>1115,65</td>
+                                    <td>819</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Оборудованные учебные кабинеты (оборудованные аудитории)</td>
+                                    <td>Здание учебного корпуса "К", 190005, Санкт-Петербург, Курляндская ул., д. 2/5, лит. А</td>
+                                    <td>939,5</td>
+                                    <td>591</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание Главного учебно-лабораторного корпуса, 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>1922,7</td>
+                                    <td>571</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "А", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>1552,7</td>
+                                    <td>xxx</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "С", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4 лит. А</td>
+                                    <td>177,6</td>
+                                    <td>54</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "Е", 190005, г. Санкт-Петербург, ул. Егорова, д. 5/8, лит. А</td>
+                                    <td>961,8</td>
+                                    <td>365</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "5", 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 5, лит. А</td>
+                                    <td>176,2</td>
+                                    <td>62</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "К", 190005, Санкт-Петербург, Курляндская ул., д. 2/5, лит. А</td>
+                                    <td>1196,97</td>
+                                    <td>304</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Актовый зал</td>
+                                    <td>190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4 лит. А</td>
+                                    <td>613,7</td>
+                                    <td>630</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Компьютерные классы</td>
+                                    <td>190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4 лит. А</td>
+                                    <td>xxx</td>
+                                    <td>448</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Компьютерные классы</td>
+                                    <td>190005, Санкт-Петербург, Курляндская ул., д. 2/5, лит. А</td>
+                                    <td>xxx</td>
+                                    <td>46</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Музей истории СПбГАСУ</td>
+                                    <td>190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>157,6</td>
+                                    <td>-</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Музей истории петербургского кирпича</td>
+                                    <td>190005, г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А</td>
+                                    <td>29,1</td>
+                                    <td>-</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                                <tr itemprop="purposeFacil">
+                                    <td>Учебно-лабораторный комплекс</td>
+                                    <td>Здание учебно-лабораторного корпуса "Р", 190005, Санкт-Петербург, Розенштейна ул., д. 32, лит. А</td>
+                                    <td>1370,7</td>
+                                    <td>ххх</td>
+                                    <td itemprop="purposeFacilOvz">Приспособлено</td>
+                                </tr>
+                            </table>
+                            <button data-table="table5" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <h4>Сведения об условиях питания и охраны здоровья обучающихся</h4>
+                            <table class="table6 table-normalize table table-striped table-bordered" id="meals">
+                                <tr class="table-title">
+                                    <th style="width: 25%;">Вид помещения</th>
+                                    <th style="width: 25%;">Адрес места нахождения</th>
+                                    <th style="width: 5%;">Площадь, м кв.</th>
+                                    <th style="width: 5%;">Количество мест</th>
+                                    <th style="width: 30%;">Приспособленность для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
+                                    <th style="width: 10%;">Ссылка на копию документа, содержащего сведения об условиях питания и охраны здоровья обучающихся</th>
+                                </tr>
+                                <tr itemprop="meals">
+                                    <td>Столовая</td>
+                                    <td>Санкт-Петербург, 2-я Красноармейская ул., д.4</td>
+                                    <td>1142,7</td>
+                                    <td>350</td>
+                                    <td itemprop="mealsOvz">Приспособлено</td>
+                                    <td itemprop="mealsDocLink"><a target="_blank" href="http://www.spbgasu.ru/Studentam/Stolovaya_SPbGASU/">Условия питания и охраны здоровья обучающихся</a></td>
+                                </tr>
+                                <tr itemprop="meals">
+                                    <td>Студенческое кафе</td>
+                                    <td>Санкт-Петербург, 2-я Красноармейская ул., д.4</td>
+                                    <td>373,69</td>
+                                    <td>110</td>
+                                    <td itemprop="mealsOvz">Приспособлено</td>
+                                    <td itemprop="mealsDocLink"><a target="_blank" href="http://www.spbgasu.ru/Studentam/Stolovaya_SPbGASU/">Условия питания и охраны здоровья обучающихся</a></td>
+                                </tr>
+                                <tr itemprop="meals">
+                                    <td>Буфет</td>
+                                    <td>Санкт-Петербург, ул. Курляндская, д.2/5</td>
+                                    <td>86,3</td>
+                                    <td>32</td>
+                                    <td itemprop="mealsOvz">Приспособлено</td>
+                                    <td itemprop="mealsDocLink"><a target="_blank" href="http://www.spbgasu.ru/Studentam/Stolovaya_SPbGASU/">Условия питания и охраны здоровья обучающихся</a></td>
+                                </tr>
+                                <tr itemprop="meals">
+                                    <td>Медицинский пункт</td>
+                                    <td>Санкт-Петербург, 2-я Красноармейская ул., д.4</td>
+                                    <td>128,1</td>
+                                    <td>-</td>
+                                    <td itemprop="mealsOvz">Приспособлено</td>
+                                    <td itemprop="mealsDocLink"><a target="_blank" href="http://www.spbgasu.ru/Obrazovatelnaya_deyatelnost/Mediko-profilakticheskiy_centr/">Условия питания и охраны здоровья обучающихся</a></td>
+                                </tr>
+                                <tr itemprop="meals">
+                                    <td>База отдыха "Березово"</td>
+                                    <td>Ленинградская обл., приозерский р-он, Севастьяновское сельское поселение, пос. Березово</td>
+                                    <td>357,4</td>
+                                    <td>-</td>
+                                    <td itemprop="mealsOvz">нет</td>
+                                    <td itemprop="mealsDocLink"><a target="_blank" href="%D0%BD%D0%B5%D1%82">Условия питания и охраны здоровья обучающихся</a></td>
+                                </tr>
+                            </table>
+                            <button data-table="table6" class="button-table button-table-open">Открыть таблицу</button>
+                        </div>
+
+                        <div>
+                            <h4>Сведения о доступе к информационным системам и информационно-телекоммуникационным сетям</h4>
+                            <table class="table-no-more" itemprop="comNet">
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Наличие в образовательной организации электронной информационно-образовательной среды:
+                                    </td>
+                                    <td itemprop="purposeEios">
+                                        Да
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Общее количество компьютеров с выходом в информационно-телекоммуникационную сеть «Интернет», к которым имеют доступ обучающиеся:
+                                    </td>
+                                    <td itemprop="purposeInternet">
+                                        1551
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Общее количество ЭБС, к которым имеют доступ обучающиеся (собственных или на договорной основе):
+                                    </td>
+                                    <td itemprop="purposeEbs">
+                                        7
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Количество собственных электронных образовательных и информационных ресурсов:
+                                    </td>
+                                    <td itemprop="eoisOwn">
+                                        7
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Количество сторонних электронных образовательных и информационных ресурсов:
+                                    </td>
+                                    <td itemprop="eoisSide">
+                                        11
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Количество баз данных электронного каталога:
+                                    </td>
+                                    <td itemprop="bdec">
+                                        2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-no-more-title">
+                                        Cведения о доступе к информационным системам и информационно-телекоммуникационным сетям, приспособленным для использования инвалидами и лицами с ограниченными возможностями здоровья:
+                                    </td>
+                                    <td class="table-big-text" itemprop="comNetOvz">
+                                        Сайт Санкт-Петербургского государственного архитектурно-строительного университета имеет версию для слабовидящих.
+                                        На территории университета работает сеть Wi-Fi стандарта IEEE 802.11g/n/ac со скоростью передачи данных до 1300 Mbit/с. Сеть открыта для студентов и преподавателей университета. Беспроводная сеть полностью охватывает строительный и архитектурный учебные корпуса и построена на более чем ста точках доступа с единой точкой авторизации.
+                                        Все ЭБС, к которым имеют доступ обучающиеся, имеют версии для слабовидящих.
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="page_content">
+                        <a href="objects-ovz.html#for_accessibility" class="accessibility">
+                            Версия официального сайта для слабовидящих
+                        </a>
+                        <h2 id="page_content_header">
+                            Сведения для инвалидов и лиц с ограниченными возможностями здоровья
+                        </h2>
+                        <div class="page-block">
+                            <h4 class="page-subtitle">Сведения об обеспечении доступа в здания образовательной организации инвалидов и лиц с ограниченными возможностями здоровья:</h4>
+                            <div class="page-text" itemprop="ovz">
+                                <p>
+                                    На территории СПбГАСУ обеспечивается доступ к зданиям и сооружениям в соответствии с условиями беспрепятственного, безопасного и удобного передвижения обучающихся с ограниченными возможностями здоровья и (или) инвалидов.
+                                </p>
+                                <p>
+                                    В учебно-лабораторных корпусах по адресам: г. Санкт-Петербург, ул. 2-я Красноармейская, д.4, лит. А и ул. 2-я Красноармейская, д.5 лит. А оборудованы отдельные входы и санитарно-гигиенические кабины для лиц с ОВЗ. У входов в учебно-лабораторные корпуса установлены информационные таблички с контактным телефоном для лиц, испытывающих затруднения при самостоятельном передвижении и нуждающихся в помощи. Наименование и режим работы университета и приёмной комиссии продублированы табличками с рельефно-точечным шрифтом Брайля. Ширина дверных проемов в стенах, лестничных маршей, площадок достаточна для перемещения обучающихся с ОВЗ. На лестницах имеются поручни, предусмотрена установка съёмных пандусов с целью обеспечения комфортного перемещения по ступенькам лестничных пролётов. Имеются лифты. Закуплены сменные кресла-коляски со съёмными колёсами для преодоления узких проходов.
+                                </p>
+                                <p>
+                                    С целью обеспечения образовательными ресурсами обучающихся с ограниченными возможностями здоровья в читальном зале научно-технической библиотеки (ауд. 217) оборудовано компьютерное рабочее место для лиц с нарушением функций опорно-двигательного аппарата, оснащенное специальным техническим оборудованием и программным обеспечением.
+                                </p>
+                                <p>
+                                    В СПбГАСУ созданы необходимые материально-технические условия, обеспечивающие возможность беспрепятственного передвижения и обучения для лиц с ограниченными возможностями здоровья и (или) инвалидов.
+                                </p>
+                                <a href="http://www.spbgasu.ru/upload-files/studentlife/dostup_sreda/road_map.pdf" class="inner-link-pdf">
+                                    <svg class="icon" width="17" height="17">
+                                        <use xlink:href="#icon-pdf"></use>
+                                    </svg>
+                                    Дорожная карта (План мероприятий СПбГАСУ по повышению значений показателей доступности для инвалидов объектов на период 2015-2030 гг.)</a>
+                                <a href="http://www.spbgasu.ru/upload-files/studentlife/dostup_sreda/pass_dostup.pdf" class="inner-link-pdf">
+                                    <svg class="icon" width="17" height="17">
+                                        <use xlink:href="#icon-pdf"></use>
+                                    </svg>
+                                    Паспорта доступности для инвалидов объектов университета</a>
+                            </div>
+                        </div>
+                        <div class="page-block">
+                            <h4 class="page-subtitle">
+                                Сведения о наличии специальных технических средств обучения коллективного и индивидуального пользования для инвалидов и лиц с ограниченными возможностями здоровья:
+                            </h4>
+                            <div class="page-text" itemprop="techOvz">
+                                <p>
+                                    Учебно-лабораторная база СПбГАСУ обеспечивает подготовку обучающихся, в том числе инвалидов и лиц с ограниченными возможностями здоровья.
+                                </p>
+                                <p>
+                                    Все учебные корпуса оборудованы звукоусиливающей аппаратурой для сигнализации об опасности и других важных мероприятиях. В холлах, в библиотеке, студенческой столовой и в помещении приемной комиссии по адресу: г. Санкт-Петербург, 2-я Красноармейская ул., д. 4, лит. А установлены ЖК-телевизоры, а также электронные табло ("бегущая строка") для вывода аудио-визуальной информации.
+                                </p>
+                                <p>
+                                    Учебные кабинеты оборудованы видеотехникой (мультимедийные проекторы, экраны, ЖК-телевизоры, электронные доски). В компьютерных классах установлено специализированное программное обеспечение.</p>
+                            </div>
+                        </div>
+
+                        <div class="result-wrapper">
+                            <div class="result-list-wrapper">
+                                <h4 class="result-title">Перечень электронных образовательных ресурсов:</h4>
+                                <ul id="er_list" class="result-list" itemprop="erList">
+                                    <li class="result-list-item">
+                                        <a href="http://minobrnauki.gov.ru/" title="Министерство науки и высшего образования РФ" target="_blank" class="inner-link">Министерство науки и высшего образования РФ</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://obrnadzor.gov.ru/" title="Федеральная служба по надзору в сфере образования и науки" target="_blank" class="inner-link">Федеральная служба по надзору в сфере образования и науки</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://www.edu.ru/" title="Федеральный портал &quot;Российское образование&quot;" target="_blank" class="inner-link">Федеральный портал "Российское образование"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://window.edu.ru/" title="Информационная система &quot;Единое окно доступа к образовательным ресурсам&quot;" target="_blank" class="inner-link">Информационная система "Единое окно доступа к образовательным ресурсам"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://fcior.edu.ru/" title="Федеральный центр информационно-образовательных ресурсов" target="_blank" class="inner-link">Федеральный центр информационно-образовательных ресурсов</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://www.spbgasu.ru/" title="Сайт Санкт-Петербургского государственного архитектурно-строительного университета" target="_blank" class="inner-link">Сайт Санкт-Петербургского государственного архитектурно-строительного университета</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://moodle.spbgasu.ru/" title="Портал дистанционного обучения Санкт-Петербургского государственного архитектурно-строительного университета" target="_blank" class="inner-link">Портал дистанционного обучения Санкт-Петербургского государственного архитектурно-строительного университета</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://www.spbgasu.ru/Universitet/Biblioteka/" title="Информационный ресурс научно-технической библиотеки Санкт-Петербургского государственного архитектурно-строительного университета" target="_blank" class="inner-link">Информационный ресурс научно-технической библиотеки Санкт-Петербургского государственного архитектурно-строительного университета</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://ntb.spbgasu.ru" title="Электронный каталог научно-технической библиотеки СПбГАСУ" target="_blank" class="inner-link">Электронный каталог научно-технической библиотеки СПбГАСУ</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://ntb.spbgasu.ru/cgi-bin/irbis64r_141_ft/cgiirbis_64_ft.exe?C21COM=F&amp;I21DBN=FTEXT_FULLTEXT&amp;P21DBN=FTEXT&amp;Z21ID=" title="Полнотекстовая база данных СПбГАСУ" target="_blank" class="inner-link">Полнотекстовая база данных СПбГАСУ</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://e.lanbook.com/" title="Электронно-библиотечная система &quot;ЛАНЬ&quot;" target="_blank" class="inner-link">Электронно-библиотечная система "ЛАНЬ"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://www.iprbookshop.ru/" title="Электронно-библиотечная система &quot;IPRBooks&quot;" target="_blank" class="inner-link">Электронно-библиотечная система "IPRBooks"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://biblio-online.ru/" title="Электронно-библиотечная система &quot;ЮРАЙТ&quot;" target="_blank" class="inner-link">Электронно-библиотечная система "ЮРАЙТ"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://elibrary.ru/" title="Научная электронная библиотека &quot;eLibrary&quot;" target="_blank" class="inner-link">Научная электронная библиотека "eLibrary"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://apps.webofknowledge.com/" title="Реферативная база данных Web of Science" target="_blank" class="inner-link">Реферативная база данных Web of Science</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://job.spbgasu.ru/" title="Информационный ресурс службы содействия трудоустройству студентов и выпускников СПбГАСУ" target="_blank" class="inner-link">Информационный ресурс службы содействия трудоустройству студентов и выпускников СПбГАСУ</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://map.spbgasu.ru/" title="Интерактивная карта СПбГАСУ" target="_blank" class="inner-link">Интерактивная карта СПбГАСУ</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://gasudata.lan.spbgasu.ru/" title="Информационно-правовая база данных &quot;Кодекс&quot;" target="_blank" class="inner-link">Информационно-правовая база данных "Кодекс"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="http://www.studentlibrary.ru/" title="Электронно-библиотечная система издательства &quot;Консультант студента&quot;" target="_blank" class="inner-link">Электронно-библиотечная система издательства "Консультант студента"</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://%D0%BD%D1%8D%D0%B1.%D1%80%D1%84/" title="НЭБ Национальная электронная библиотека" target="_blank" class="inner-link">НЭБ Национальная электронная библиотека</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://polpred.com/news" title="Электронно-библиотечная система Polpred.com" target="_blank" class="inner-link">Электронно-библиотечная система Polpred.com</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://www.proquest.com/products-services/materials_science.html" title="Электронно-библиотечная система компании PROQUEST" target="_blank" class="inner-link">Электронно-библиотечная система компании PROQUEST</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="result-list-wrapper">
+                                <h4 class="result-title">Перечень электронных образовательных ресурсов, приспособленных для использования инвалидами и лицами с ограниченными возможностями здоровья:</h4>
+                                <ul id="er_list_ovz" class="result-list" itemprop="erListOvz">
+                                    <li class="result-list-item">
+                                        <a href="http://www.spbgasu.ru/" title="Сайт Санкт-Петербургского государственного архитектурно-строительного университета. Версия для слабовидящих" target="_blank" class="inner-link">Сайт Санкт-Петербургского государственного архитектурно-строительного университета. Версия для слабовидящих</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://moodle.spbgasu.ru/" title="Портал дистанционного обучения Санкт-Петербургского государственного архитектурно-строительного университета" target="_blank" class="inner-link">Портал дистанционного обучения Санкт-Петербургского государственного архитектурно-строительного университета</a>
+                                    </li>
+                                    <li class="result-list-item">
+                                        <a href="https://e.lanbook.com/" title="Издательство &quot;Лань.Электронно-библиотечная система&quot; - предлагает технологическое решение, позволяющее незрячим студентам эффективно работать с книгами, размещёнными в ЭБС." target="_blank" class="inner-link">Издательство "Лань.Электронно-библиотечная система" - предлагает технологическое решение, позволяющее незрячим студентам эффективно работать с книгами, размещёнными в ЭБС.</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/open-table.js"></script>
+</body>
+
+</html>

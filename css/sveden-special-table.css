@@ -1,0 +1,7 @@
+.table-wrapper:not(:last-child) {
+    margin-bottom: 100px !important;
+}
+
+.button-table {
+    bottom: -45px !important;
+}

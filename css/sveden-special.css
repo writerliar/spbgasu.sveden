@@ -1,0 +1,46 @@
+.navbar-nav li a {
+    font-size: 30px !important;
+}
+
+#page_content {
+    font-size: 26px !important;
+}
+#page_content td, #page_content th {
+    font-size: 26px !important;
+}
+#page_content h4 {
+    font-size: 30px !important;
+}
+
+.page_content {
+    font-size: 26px !important;
+}
+
+.page_content td,
+.page_content th {
+    font-size: 26px !important;
+}
+
+.page_content h4 {
+    font-size: 30px !important;
+}
+
+.page_content .page-block p {
+    font-size: 26px !important;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    top: 6px !important;
+    left: 0px !important;
+}
+
+.page-block .icon {
+    left: 13px !important;
+}
+
+.inner-link-pdf,
+.inner-link-pdf-blue {
+    padding-left: 35px !important;
+}
