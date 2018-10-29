@@ -160,7 +160,8 @@ hr {
     border-bottom: 1px dashed #ffffff;
 }
 
-.page-text p {
+.page-text p,
+.page-text-list {
     padding: 5px 20px;
     padding-right: 30px;
     margin: 0;
