@@ -16,7 +16,7 @@ tr.table-subtitle {
     margin-bottom: 50px;
 }
 
-.table-normalize td,
+.table-normalize td:not(.table-section),
 .table-normalize th {
     text-align: center;
 }
@@ -33,35 +33,43 @@ tr.table-subtitle {
     background-color: #bababa;
 }
 
+.table-section {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    font-size: 13px;
+    background-color: #d6d6d6;
+}
+
 .button-table {
     position: absolute;
     left: 50%;
     bottom: -25px;
     margin-left: -50px;
     padding: 0px 8px;
-    
+
     color: #ffffff;
     font: inherit;
-    
+
     background-color: #aa3c24;
-    
+
     border: 2px solid #aa3c24;
     border-radius: 5px;
-    
+
     box-shadow: 0px 3px 3px 0px #747474;
 }
 
 .button-table:hover {
     background-color: #6f1d0c;
-    
+
     border-color: #6f1d0c;
 }
 
 .button-table:active {
     background-color: #357f93;
-    
+
     border-color: #357f93;
-    
+
     outline: none;
 }
 
