@@ -147,7 +147,7 @@ html {
     width: 100%;
     bottom: 0;
 }
-#page_content p, #page_content td {
+.page_content p, .page_content td {
     white-space: pre-line;
 }
 .row ul li {

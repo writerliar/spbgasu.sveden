@@ -19,10 +19,11 @@ tr.table-subtitle {
 .table-normalize td:not(.table-section),
 .table-normalize th {
     text-align: center;
+    white-space: pre-line;
 }
 
-.table-wrapper:last-child {
-    margin-bottom: 0;
+.table-normalize td {
+    padding: 8px;
 }
 
 .table-title th {
