@@ -208,3 +208,31 @@ hr {
 td:hover {
     background-color: #adadad;
 }
+
+.table-normalize td.special-places-list {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.special-places-list p {
+    padding: 0;
+    margin: 0;
+}
+
+.show-more {
+  padding: 5px 0px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.special-item-hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
