@@ -215,24 +215,50 @@ td:hover {
     text-align: left;
 }
 
+.special-places-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .special-places-list p {
     padding: 0;
     margin: 0;
+    margin-bottom: 3px;
+}
+
+.special-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+}
+
+.special-places-list:hover {
+    color: #ffffff;
+}
+
+.special-item:first-child {
+    margin-top: 10px;
 }
 
 .show-more {
-  padding: 5px 0px;
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-  border: none;
-  background: none;
+    padding: 5px 0px;
+    margin-left: 23px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .special-item-hide {
-  display: none;
+    display: none;
+}
+
+.special-item.show {
+    display: flex;
+    flex-direction: column;
 }
 
 .show {
-  display: block;
+    display: block;
 }
