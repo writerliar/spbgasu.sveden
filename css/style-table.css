@@ -22,6 +22,10 @@ tr.table-subtitle {
     white-space: pre-line;
 }
 
+.table-left td:not(.table-title) {
+    text-align: left;
+}
+
 .table-normalize td {
     padding: 8px;
 }
