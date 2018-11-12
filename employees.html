@@ -12,6 +12,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/sveden-base.css" rel="stylesheet">
     <link href="./css/sveden-style.css" rel="stylesheet">
+    <link href="./css/style-table.css" rel="stylesheet">
 </head>
 
 <body>
@@ -68,7 +69,7 @@
                         <div>
                             <h4>Руководитель образовательной организации, его заместители</h4>
                             <table class="table table-striped table-bordered" id="chiefs">
-                                <tr>
+                                <tr class="table-title">
                                     <th>Ф.И.О.</th>
                                     <th>Должность</th>
                                     <th>Контактные телефоны</th>
@@ -128,7 +129,7 @@
                         <div>
                             <h4>Руководители филиалов образовательной организации</h4>
                             <table class="table table-striped table-bordered" id="chiefs_fils">
-                                <tr>
+                                <tr class="table-title">
                                     <th>Наименование филиала</th>
                                     <th>Ф.И.О.</th>
                                     <th>Должность</th>
@@ -144,7 +145,7 @@
                         <div>
                             <h4>Педагогические работники</h4>
                             <table class="table table-striped table-bordered" id="staff">
-                                <tr>
+                                <tr class="table-title">
                                     <th>Ф.И.О. преподавателя</th>
                                     <th>Должность преподавателя</th>
                                     <th>Перечень преподаваемых дисциплин</th>
@@ -156,6 +157,9 @@
                                     <th>Сведения о повышении квалификации и (или) профессиональной переподготовке</th>
                                     <th>Общий стаж работы</th>
                                     <th>Стаж работы педагогического работника по специальности</th>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">А</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Аблязов Тимур Хасанович</td>
@@ -666,6 +670,9 @@
                                     </td>
                                     <td itemprop="genExperience">39.6</td>
                                     <td itemprop="specExperience">22.9</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Б</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Бабанов Владимир Владимирович</td>
@@ -1398,6 +1405,9 @@
                                     <td itemprop="genExperience">43.6</td>
                                     <td itemprop="specExperience">29.1</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">В</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Вагер Борис Георгиевич</td>
                                     <td itemprop="post">профессор</td>
@@ -1981,6 +1991,9 @@
                                     <td itemprop="genExperience">6.10</td>
                                     <td itemprop="specExperience">0.0</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Г</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Гаврилов Александр Александрович</td>
                                     <td itemprop="post">доцент</td>
@@ -2510,6 +2523,9 @@
                                     <td itemprop="genExperience">27.9</td>
                                     <td itemprop="specExperience">25.0</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Д</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Давыдова Юлия Анатольевна</td>
                                     <td itemprop="post">старший преподаватель</td>
@@ -3000,6 +3016,9 @@
                                     <td itemprop="genExperience">14.1</td>
                                     <td itemprop="specExperience">5.1</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Е</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Евсиков Игорь Александрович</td>
                                     <td itemprop="post">старший преподаватель</td>
@@ -3258,6 +3277,9 @@
                                     <td itemprop="genExperience">28.3</td>
                                     <td itemprop="specExperience">16.5</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Ж</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Жаворонков Михаил Ильич</td>
                                     <td itemprop="post">ассистент</td>
@@ -3396,6 +3418,9 @@
                                     <td itemprop="profDevelopment">информация в стадии заполнения</td>
                                     <td itemprop="genExperience">31.2</td>
                                     <td itemprop="specExperience">12.4</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">З</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Заборщикова Наталья Павловна</td>
@@ -3561,6 +3586,9 @@
                                     <td itemprop="profDevelopment">Проектирование зданий и сооружений. Работы по подготовке архитектурных решений (2017/72); Охрана труда педагогических работников образовательных учреждений (2017/40); Современные образовательные технологии (2015/72)</td>
                                     <td itemprop="genExperience">27.9</td>
                                     <td itemprop="specExperience">11.10</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">И</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Иваненко Ирина Ивановна</td>
@@ -3757,6 +3785,9 @@
                                     <td itemprop="profDevelopment">информация в стадии заполнения</td>
                                     <td itemprop="genExperience">информация в стадии заполнения</td>
                                     <td itemprop="specExperience">информация в стадии заполнения</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">К</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Каган-Розенцвейг Лев Марленович</td>
@@ -4694,6 +4725,9 @@
                                     <td itemprop="genExperience">41.0</td>
                                     <td itemprop="specExperience">12.1</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Л</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Ланько Сергей Владимирович</td>
                                     <td itemprop="post">доцент</td>
@@ -5005,6 +5039,9 @@
                                     <td itemprop="profDevelopment">Работа по подготовке архитектурных решений (2016/72); Охрана труда педагогических работников образовательных учреждений (2017/40)</td>
                                     <td itemprop="genExperience">34.9</td>
                                     <td itemprop="specExperience">3.7</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">М</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Мазинг Алексей Артурович</td>
@@ -5734,6 +5771,9 @@
                                     <td itemprop="genExperience">3.9</td>
                                     <td itemprop="specExperience">0.0</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Н</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Назаркин Виктор Гаврилович</td>
                                     <td itemprop="post">профессор</td>
@@ -5968,6 +6008,9 @@
                                     <td itemprop="genExperience">12.9</td>
                                     <td itemprop="specExperience">7.0</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">О</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Обласов Юрий Александрович</td>
                                     <td itemprop="post">старший преподаватель</td>
@@ -6110,6 +6153,9 @@
                                     <td itemprop="profDevelopment">Охрана труда педагогических работников образовательных учреждений (2017/40)</td>
                                     <td itemprop="genExperience">10.9</td>
                                     <td itemprop="specExperience">6.11</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">П</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Павлов Александр Иванович</td>
@@ -6671,6 +6717,9 @@
                                     <td itemprop="genExperience">39.0</td>
                                     <td itemprop="specExperience">информация в стадии заполнения</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Р</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Радов Василий Петрович</td>
                                     <td itemprop="post">доцент</td>
@@ -6904,6 +6953,9 @@
                                     <td itemprop="profDevelopment">Охрана труда педагогических работников образовательных учреждений (2017/40); Разработка и внедрение в учебный процесс электронных курсов на платформе LMS Moodle (2017/72)</td>
                                     <td itemprop="genExperience">25.10</td>
                                     <td itemprop="specExperience">24.4</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">С</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Савельева Наталия Владимировна</td>
@@ -7646,6 +7698,9 @@
                                     <td itemprop="genExperience">10.10</td>
                                     <td itemprop="specExperience">6.0</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Т</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Табаков Александр Владимирович</td>
                                     <td itemprop="post">доцент</td>
@@ -7933,6 +7988,9 @@
                                     <td itemprop="genExperience">Информация в стадии заполнения</td>
                                     <td itemprop="specExperience">Информация в стадии заполнения</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">У</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Уляшева Вера Михайловна</td>
                                     <td itemprop="post">профессор</td>
@@ -8010,6 +8068,9 @@
                                     <td itemprop="profDevelopment">Охрана труда педагогических работников образовательных учреждений (2017/40); Разработка адаптивных образовательных программ высшего образования для обучающихся инвалидов и лиц с ограниченными возможностями здоровья» (2017/72)</td>
                                     <td itemprop="genExperience">30.8</td>
                                     <td itemprop="specExperience">8.8</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Ф</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Фадеев Александр Николаевич</td>
@@ -8193,6 +8254,9 @@
                                     <td itemprop="genExperience">47.0</td>
                                     <td itemprop="specExperience">Информация в стадии заполнения</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Х</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Халецкая Ольга Борисовна</td>
                                     <td itemprop="post">доцент</td>
@@ -8349,6 +8413,9 @@
                                     <td itemprop="genExperience">3.0</td>
                                     <td itemprop="specExperience">Информация в стадии заполнения</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Ц</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Цапаева Юлия Александровна</td>
                                     <td itemprop="post">старший преподаватель</td>
@@ -8413,6 +8480,9 @@
                                     <td itemprop="profDevelopment"></td>
                                     <td itemprop="genExperience"></td>
                                     <td itemprop="specExperience"></td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Ч</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Чахкиев Ислам Мусаевич</td>
@@ -8582,6 +8652,9 @@
                                     <td itemprop="profDevelopment">Охрана труда педагогических работников образовательных учреждений (2017/40)</td>
                                     <td itemprop="genExperience">40.4</td>
                                     <td itemprop="specExperience">21.4</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Ш</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Шабалин Владимир Владимирович</td>
@@ -8856,6 +8929,9 @@
                                     <td itemprop="genExperience">24.6</td>
                                     <td itemprop="specExperience">12.11</td>
                                 </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Щ</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Щербаков Александр Павлович</td>
                                     <td itemprop="post">ассистент</td>
@@ -8869,6 +8945,9 @@
                                     <td itemprop="genExperience">8.7</td>
                                     <td itemprop="specExperience">0.9</td>
                                 </tr>
+                                <tr class="">
+                                    <td class="table-section" colspan="11">Ю</td>
+                                </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Юдина Антонина Федоровна</td>
                                     <td itemprop="post">профессор</td>
@@ -8881,6 +8960,9 @@
                                     <td itemprop="profDevelopment">Охрана труда педагогических работников образовательных учреждений (2017/40); Разработка основных профессиональных образовательных программ и дополнительных профессиональных программ на основе профессиональных стандартов (2016/72); Модернизация методического обеспечения учебного процесса (2015/36); Нормативно-методическое обеспечение образовательного процесса по программам бакалавриата, специалитета и магистратуры (2018/72)</td>
                                     <td itemprop="genExperience">44.5</td>
                                     <td itemprop="specExperience">33.10</td>
+                                </tr>
+                                <tr class="table-subtitle">
+                                    <td colspan="11" class="table-section">Я</td>
                                 </tr>
                                 <tr itemprop="teachingStaff">
                                     <td itemprop="fio">Яблонский Леонид Люцианович</td>
