@@ -269,3 +269,7 @@ td:hover {
 .show {
     display: block;
 }
+
+.alphabet {
+    cursor: pointer;
+}
