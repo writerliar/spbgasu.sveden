@@ -1,12 +1,9 @@
 /*general*/
-body {
-    background-color: #FFFFFF;
-}
+
 #section {
     margin-top: 15px;
     margin-bottom: 70px;
     padding: 0px;
-    background-color: #FFFFFF;
         border-radius: 0px;
 }
 /*header*/
@@ -48,7 +45,6 @@ body {
     color: #315899;
 }
 #header ul.dropdown-menu {
-    background-color: #ffffff;
 }
 #header ul.navbar-nav>li.dropdown.open>a {
     background-color: #f8f8f8;
