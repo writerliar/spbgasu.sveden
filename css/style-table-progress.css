@@ -1,0 +1,274 @@
+.table-normalize tr {
+    display: none;
+}
+
+.table-normalize tr:first-child,
+tr.table-subtitle {
+    display: table-row;
+}
+
+.table-normalize.show tr {
+    display: table-row;
+}
+
+.table-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.table-normalize td:not(.table-section),
+.table-normalize th {
+    text-align: center;
+    white-space: pre-line;
+}
+
+.table-left td:not(.table-title) {
+    text-align: left;
+}
+
+.table-normalize td {
+    padding: 8px;
+}
+
+.table-title th {
+    background-color: #bababa;
+}
+
+.table-subtitle th {
+    background-color: #bababa;
+}
+
+.table-section {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    font-size: 13px;
+    background-color: #d6d6d6;
+}
+
+.button-table {
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    margin-left: -50px;
+    padding: 0px 8px;
+
+    color: #ffffff;
+    font: inherit;
+
+    background-color: #aa3c24;
+
+    border: 2px solid #aa3c24;
+    border-radius: 5px;
+
+    box-shadow: 0px 3px 3px 0px #747474;
+}
+
+.button-table:hover {
+    background-color: #6f1d0c;
+
+    border-color: #6f1d0c;
+}
+
+.button-table:active {
+    background-color: #357f93;
+
+    border-color: #357f93;
+
+    outline: none;
+}
+
+.button-table-open {
+    display: block;
+}
+
+.button-show {
+    display: block;
+}
+
+hr {
+    color: black;
+    background-color: black;
+    height: 2px;
+}
+
+.inner-link-pdf {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    color: #aa3b24;
+    font-weight: 600;
+}
+
+.inner-link-pdf-blue {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    color: #357f93;
+    font-weight: 400;
+}
+
+.page-block .inner-link-pdf {
+    padding: 0px 20px;
+    padding-left: 43px;
+}
+
+.inner-link-pdf:hover,
+.inner-link-pdf-blue:hover {
+    color: #aa3b24;
+    text-decoration: underline;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page-block .icon {
+    left: 19px;
+}
+
+.table-no-more {
+    border-collapse: collapse;
+}
+
+.table-no-more td {
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    padding: 5px 20px;
+}
+
+.table-no-more td:nth-child(2):not(.table-big-text) {
+    text-align: center;
+}
+
+.table-no-more-title {
+    background-color: #bababa;
+}
+
+.page-block {
+    border: 1px dashed #bababa;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#content .page-subtitle {
+    padding: 10px 10px;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    background-color: #bababa;
+    border-bottom: 1px dashed #ffffff;
+}
+
+.page-text p,
+.page-text-list {
+    padding: 5px 20px;
+    padding-right: 30px;
+    margin: 0;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.page_content:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.accessibility {
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.result-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-link {
+    position: relative;
+    color: #357f93;
+    margin-left: 25px;
+}
+
+.result-list-item .inner-link {
+    margin-left: 0;
+}
+
+.result-list-wrapper {
+    width: 780px;
+}
+
+.result-title {
+    padding-left: 36px;
+}
+
+td:hover {
+    background-color: #adadad;
+}
+
+.table-normalize td.special-places-list {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.special-places-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.special-places-list p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.special-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.special-places-list:hover {
+    color: #ffffff;
+}
+
+.special-item:first-child {
+    margin-top: 10px;
+}
+
+.show-more {
+    padding: 5px 0px;
+    margin-left: 23px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.special-item-hide {
+    display: none;
+}
+
+.special-item.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.show {
+    display: block;
+}
+
+.alphabet {
+    cursor: pointer;
+}
