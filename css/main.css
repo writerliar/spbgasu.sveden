@@ -6,12 +6,12 @@
 }
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     font-family: "Century Gothic", Arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
-/*    text-transform: uppercase;*/
+    /*    text-transform: uppercase;*/
     line-height: 1.2;
     color: #747474;
     background-image: url(../img/background-pattern.png);
@@ -34,8 +34,8 @@ a:focus {
 }
 
 img {
-/*	max-width: 100%; */
-	height: auto;
+    /*	max-width: 100%; */
+    height: auto;
 }
 
 .header-border-top {
@@ -54,9 +54,9 @@ img {
 
 .main-name-wrapper {
     display: flex;
-    
-/*    временно*/
-    margin-bottom: 40px; 
+
+    /*    временно*/
+    margin-bottom: 40px;
 }
 
 .logo-wrapper {
@@ -91,7 +91,7 @@ img {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
+
 }
 
 .main-navigation-list {
@@ -120,9 +120,7 @@ img {
     color: #aa3c24;
 }
 
-.main-navigation-link:active {
-    
-}
+.main-navigation-link:active {}
 
 .dropdown-menu {
     padding: 0;
@@ -150,13 +148,10 @@ img {
 
 .dropdown-link {
     display: block;
+    padding: 5px 22px;
     width: 100%;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: none;
-}
-
-.dropdown-link {
-    font-weight: 600;
 }
 
 .dropdown-link:hover,
