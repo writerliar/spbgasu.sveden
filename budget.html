@@ -8,11 +8,13 @@
     <title>Сведения об образовательной организации</title>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/sveden-base.css" rel="stylesheet">
-    <link href="./css/sveden-style.css" rel="stylesheet">
-    <link href="./css/style-table.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style-progress.css" rel="stylesheet">
+    <link href="./css/bootstrap-progress.css" rel="stylesheet">
+    <link href="./css/sveden-base-progress.css" rel="stylesheet">
+    <link href="./css/sveden-style-progress.css" rel="stylesheet">
+    <link href="./css/style-table-progress.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,50 +29,84 @@
     </svg>
     <div id="wrapper" style="display: block;">
 
-        <div class="container">
-            <div class="header" id="header">
-                <h1 id="organization_name">Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный архитектурно-строительный университет»</h1>
-                <div class="navbar navbar-default navbar-static-top">
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="">
+        <div class="header" id="header">
+            <div class="header-border-top"></div>
+            <div class="container">
+                <div class="main-name-wrapper">
+                    <div class="logo-wrapper">
+                        <a href="http://www.spbgasu.ru/" target="_blank">
+                            <img src="img/logo.png" width="80" height="126" alt="Логотип университета СПБГАСУ">
+                        </a>
+                    </div>
+                    <a href="http://www.spbgasu.ru/" target="_blank">
+                        <h1 id="organization_name" class="main-name">Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный архитектурно-строительный университет»</h1>
+                    </a>
+                </div>
+
+                <div class="navigation-wrapper">
+                    <nav class="main-navigation">
+                        <ul class="main-navigation-list">
+                            <li>
                                 <a href="/">
-                                    Главная <span class="sr-only">(current)</span>
+                                    Главная
                                 </a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle main-navigation-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     Сведения об образовательной организации <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="common.html">Основные сведения</a></li>
-                                    <li><a href="struct.html">Структура и органы управления образовательной организацией</a></li>
-                                    <li><a href="document.html">Документы</a></li>
-                                    <li><a href="education.html">Образование</a></li>
-                                    <li><a href="eduStandarts.html">Образовательные стандарты</a></li>
-                                    <li><a href="employees.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
-                                    <li><a href="objects.html">Материально-техническое обеспечение и оснащённость образовательного процесса</a></li>
-                                    <li><a href="grants.html">Стипендии и иные виды материальной поддержки</a></li>
-                                    <li><a href="paid_edu.html">Платные образовательные услуги</a></li>
-                                    <li><a href="budget.html">Финансово-хозяйственная деятельность</a></li>
-                                    <li><a href="vacant.html">Вакантные места для приема (перевода)</a></li>
+                                    <li>
+                                        <a href="common.html" class="dropdown-link main-navigation-link">Основные сведения</a>
+                                    </li>
+                                    <li>
+                                        <a href="struct.html" class="dropdown-link">Структура и органы управления образовательной организацией</a>
+                                    </li>
+                                    <li>
+                                        <a href="document.html" class="dropdown-link">Документы</a>
+                                    </li>
+                                    <li>
+                                        <a href="education.html" class="dropdown-link">Образование</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.spbgasu.ru/sveden/eduStandarts.html" class="dropdown-link">Образовательные стандарты</a>
+                                    </li>
+                                    <li>
+                                        <a href="employees.html" class="dropdown-link">Руководство. Педагогический (научно-педагогический) состав</a>
+                                    </li>
+                                    <li>
+                                        <a href="objects.html" class="dropdown-link">Материально-техническое обеспечение и оснащённость образовательного процесса</a>
+                                    </li>
+                                    <li>
+                                        <a href="grants.html" class="dropdown-link">Стипендии и иные виды материальной поддержки</a>
+                                    </li>
+                                    <li>
+                                        <a href="paid_edu.html" class="dropdown-link">Платные образовательные услуги</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-link dropdown-link-current">Финансово-хозяйственная деятельность</a>
+                                    </li>
+                                    <li>
+                                        <a href="vacant.html" class="dropdown-link">Вакантные места для приема (перевода)</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li itemprop="сopy">
-                                <a href="budget-ovz.html" class="accessability">
-                                    Версия официального сайта для слабовидящих
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    </nav>
+                    <ul class="special-menu">
+                        <li itemprop="сopy">
+                            <a href="eduStandarts-ovz.html" class="accessibility">
+                                Версия официального сайта для слабовидящих
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
             <div class="section" id="section">
 
                 <div class="form-group content" id="content" style="width: 100%">
-                    <h2 id="page_content_header">
+                    <h2 id="page_content_header" class="main-title">
                         Финансово-хозяйственная деятельность
                     </h2>
                     <div class="page_content">
