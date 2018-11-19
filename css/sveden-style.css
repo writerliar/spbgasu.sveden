@@ -1,9 +1,12 @@
 /*general*/
-
+body {
+    background-color: #FFFFFF;
+}
 #section {
     margin-top: 15px;
     margin-bottom: 70px;
     padding: 0px;
+    background-color: #FFFFFF;
         border-radius: 0px;
 }
 /*header*/
@@ -22,7 +25,6 @@
 #header .navbar-default {
     background-color: transparent;
 }
-/*
 #header h1 {
     font-family: Arial, sans-serif;
     font-size: 30px;
@@ -32,12 +34,9 @@
     margin-bottom: 10px;
     font-weight: bold;
 }
-*/
-/*
 #header #bs-example-navbar-collapse-1 {
     background-color: #f8f8f8;
 }
-*/
 #header #bs-example-navbar-collapse-1,
 #header #bs-example-navbar-collapse-1 a {
     font-family: Arial, sans-serif;
@@ -49,12 +48,11 @@
     color: #315899;
 }
 #header ul.dropdown-menu {
+    background-color: #ffffff;
 }
-/*
 #header ul.navbar-nav>li.dropdown.open>a {
     background-color: #f8f8f8;
 }
-*/
 #header #bs-example-navbar-collapse-1 ul.dropdown-menu li a {
     color: #777777;
 }
@@ -118,7 +116,7 @@
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #000000;
-    
+    background-color: #ffffff;
     }
 
 #content h2,
