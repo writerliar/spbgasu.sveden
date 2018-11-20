@@ -778,19 +778,6 @@
                                     <td itemprop="specExperience">30.9</td>
                                 </tr>
                                 <tr itemprop="teachingStaff" class="teachers" data-alphabet="Б">
-                                    <td itemprop="fio">Баранова Дарья Александровна</td>
-                                    <td itemprop="post">доцент</td>
-                                    <td itemprop="teachingDiscipline">информация в стадии заполнения</td>
-                                    <td itemprop="teachingLevel">Высшее образование - специалитет, магистратура</td>
-                                    <td itemprop="teachingQual">инженер-математик</td>
-                                    <td itemprop="degree">кандидат наук</td>
-                                    <td itemprop="academStat">-</td>
-                                    <td itemprop="employeeQualification">Прикладная математика</td>
-                                    <td itemprop="profDevelopment">информация в стадии заполнения</td>
-                                    <td itemprop="genExperience">5.4</td>
-                                    <td itemprop="specExperience">3.10</td>
-                                </tr>
-                                <tr itemprop="teachingStaff" class="teachers" data-alphabet="Б">
                                     <td itemprop="fio">Барашев Матвей Нестерович</td>
                                     <td itemprop="post">доцент</td>
                                     <td itemprop="teachingDiscipline">Физика</td>
@@ -3642,7 +3629,7 @@
                                 <tr itemprop="teachingStaff" class="teachers" data-alphabet="И">
                                     <td itemprop="fio">Иванов Дмитрий Константинович</td>
                                     <td itemprop="post">ассистент</td>
-                                    <td itemprop="teachingDiscipline">Кадастр застроенных территорий; Кадастр  недвижимости и мониторинг земель</td>
+                                    <td itemprop="teachingDiscipline">Кадастр застроенных территорий; Кадастр недвижимости и мониторинг земель</td>
                                     <td itemprop="teachingLevel">высшее образование - специалитет, магистратура</td>
                                     <td itemprop="teachingQual">инженер, магистр</td>
                                     <td itemprop="degree">-</td>
@@ -8490,7 +8477,7 @@
                                 <tr itemprop="teachingStaff" class="teachers" data-alphabet="Х">
                                     <td itemprop="fio">Хирхасова Виктория Игоревна</td>
                                     <td itemprop="post">ассистент</td>
-                                    <td itemprop="teachingDiscipline">Строительные материалы (лабораторный практикум);  Архитектурное материаловедение (лабораторный практикум)</td>
+                                    <td itemprop="teachingDiscipline">Строительные материалы (лабораторный практикум); Архитектурное материаловедение (лабораторный практикум)</td>
                                     <td itemprop="teachingLevel">Информация в стадии заполнения</td>
                                     <td itemprop="teachingQual">Информация в стадии заполнения</td>
                                     <td itemprop="degree">-</td>
@@ -9229,9 +9216,24 @@
         </div>
     </div>
     <script>
-//        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
-//        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
-        
+        //        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
+        //        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
+        //        var alphabetToggle = document.querySelector['data-alphabet-title'];
+
+        function getAllElementsWithAttribute(attribute, value, tag) {
+            var matchingElements = [];
+            var allElements = document.getElementsByTagName(tag);
+            for (var i = 0, n = allElements.length; i < n; i++) {
+                if (allElements[i].getAttribute(attribute) === value) {
+                    // Element exists with attribute. Add to array.
+                    matchingElements.push(allElements[i]);
+                }
+            }
+            return matchingElements;
+        }
+
+        getAllElementsWithAttribute('data-alphabet-title', 'А', 'tr')
+
     </script>
 </body>
 
