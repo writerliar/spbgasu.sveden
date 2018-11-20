@@ -30,6 +30,7 @@ tr.table-subtitle {
     padding: 8px;
 }
 
+/*
 .table-title th {
     background-color: #bababa;
 }
@@ -37,6 +38,7 @@ tr.table-subtitle {
 .table-subtitle th {
     background-color: #bababa;
 }
+*/
 
 .table-section {
     text-transform: uppercase;
@@ -208,9 +210,11 @@ hr {
     padding-left: 36px;
 }
 
+/*
 td:hover {
     background-color: #adadad;
 }
+*/
 
 .table-normalize td.special-places-list {
     padding: 0;

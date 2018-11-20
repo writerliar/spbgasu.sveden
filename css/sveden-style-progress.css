@@ -71,22 +71,10 @@
 }
 /*content*/
 
-#content table,
-.modal-content table {
-    font-size: 12px;
-}
-#content table.table-bordered th,
-.modal-content table.table-bordered th {
-    border: 1px solid #ddd;
-}
-table.table-bordered td,
-.modal-content table.table-bordered td {
-    border: 1px solid #ddd;
-}
-#content table.table-striped>tbody>tr:nth-of-type(odd),
-.modal-content table.table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
-}
+
+
+
+
 #content ul.nav-tabs {
     border-color: #dddddd;
 }
