@@ -180,8 +180,6 @@ img {
     list-style: none;
 }
 
-
-
 .main-title {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -192,4 +190,14 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 3px solid #aa3c24;
+}
+
+
+/*table*/
+th {
+    color: #ffffff;
+    background-color: #357f93;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 17px;
 }
