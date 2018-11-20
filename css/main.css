@@ -196,6 +196,10 @@ img {
 
 
 /*table*/
+.table-small {
+    text-align: left;
+}
+
 th {
     color: #ffffff;
     font-weight: 400;
@@ -233,6 +237,12 @@ td:hover {
 }
 
 
+
+
+
+
+
+
 /*--------------------------------------------------------------------*/
 
 /*Таблица преподавателей*/
@@ -267,7 +277,7 @@ tr.table-subtitle {
 
 .table-normalize td:not(.table-section),
 .table-normalize th {
-    text-align: center;
+/*    text-align: center;*/
     white-space: pre-line;
 }
 
@@ -381,7 +391,7 @@ hr {
 }
 
 .table-no-more td:nth-child(2):not(.table-big-text) {
-    text-align: center;
+/*    text-align: center;*/
 }
 
 .table-no-more-title {
@@ -539,4 +549,21 @@ hr {
 
 .open > .dropdown-menu {
     display: block
+}
+
+
+/*budget*/
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
 }

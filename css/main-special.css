@@ -4,7 +4,7 @@ body {
     font-family: "Century Gothic", Arial, sans-serif;
     font-size: 26px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #747474;
     background-image: url(../img/background-pattern.png);
 }
@@ -30,6 +30,14 @@ body {
     font-size: 30px;
 }
 
+.page-content {
+    margin-bottom: 100px;
+}
+
+.dropdown-menu {
+    margin-bottom: 50px;
+}
+
 .icon {
     width: 26px;
     height: 26px;
@@ -44,4 +52,8 @@ body {
 .inner-link-pdf,
 .inner-link-pdf-blue {
     padding-left: 35px;
+}
+
+.table th {
+    font-size: 26px;
 }
