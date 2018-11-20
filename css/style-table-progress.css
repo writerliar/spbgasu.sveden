@@ -1,3 +1,15 @@
+/*Таблица преподавателей*/
+
+.teachers {
+    display: none;
+}
+
+.teachers.open {
+    display: table-row;
+}
+/**/
+
+
 .table-normalize tr {
     display: none;
 }

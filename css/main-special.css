@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/centurygothic/CenturyGothic.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    /*    text-transform: uppercase;*/
+    line-height: 1.2;
+    color: #747474;
+    background-image: url(../img/background-pattern.png);
+}
+
+a {
+    color: #747474;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #aa3c24;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1008px;
+}
+
+img {
+    /*	max-width: 100%; */
+    height: auto;
+}
+
+.header-border-top {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid #fff;
+    background-color: #aa3c24;
+    box-shadow: 0px 0px 80px 5px;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.main-name-wrapper {
+    display: flex;
+
+    /*    временно*/
+    margin-bottom: 40px;
+}
+
+.logo-wrapper {
+    padding-left: 31px;
+    padding-top: 9px;
+    padding-right: 28px;
+    padding-bottom: 14px;
+    margin-right: 27px;
+    margin-left: 37px;
+    z-index: 2;
+    width: 136px;
+    height: 152px;
+    box-shadow: 0px 0px 22px -1px #c4c4c4;
+    background-image: url(../img/background-pattern.png);
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+}
+
+.main-name {
+    margin: 0;
+    margin-top: 40px;
+    width: 800px;
+    text-align: center;
+    font-family: "Century Gothic", Arial, sans-serif;
+    color: #aa3c24;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navigation-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.main-navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-navigation-list li {
+    margin-right: 55px;
+}
+
+.main-navigation-list li:last-child {
+    margin-right: 0;
+}
+
+.main-navigation {
+    font-size: 14px;
+    color: #747474;
+    text-transform: uppercase;
+}
+
+.main-navigation-link:hover,
+.main-navigation-link:focus {
+    color: #aa3c24;
+}
+
+.main-navigation-link:active {}
+
+.dropdown-menu {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    display: none;
+    width: 650px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-image: url(../img/background-pattern.png);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 5px 22px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.dropdown-link:hover,
+.dropdown-link:active {
+    color: #ffffff;
+    background-color: #357f93;
+}
+
+.dropdown-link:active {
+    background-color: #114e60;
+}
+
+.dropdown-link-current {
+    color: #ffffff;
+    background-color: #357f93;
+}
+
+.special-menu {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #747474;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.main-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: #aa3c24;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #aa3c24;
+}
+
+
+/*table*/
+th {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.table-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #357f93;
+    border: 1px solid #357f93;
+}
+
+.table-title th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+.table-subtitle {
+    font-size: 14px;
+    background-color: #69B4C9;
+    border: 1px solid #69B4C9;
+}
+
+.table-subtitle th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+td {
+    background-color: #fff;
+    border: 1px solid #69B4C9;
+}
+
+
+td:hover {
+    background-color: #d6d6d6;
+}
