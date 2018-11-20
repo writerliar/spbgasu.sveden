@@ -9198,7 +9198,7 @@
     <script>
         //        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
         //        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
-        //        var alphabetToggle = document.querySelector['data-alphabet-title'];
+        var alphabetToggle = document.querySelectorAll('tr[data-alphabet-title]');
 
         function getAllElementsWithAttribute(attribute, value, tag) {
             var matchingElements = [];
@@ -9211,8 +9211,22 @@
             }
             return matchingElements;
         }
+        
+        for(var i in alphabetToggle){
+            var tr = alphabetToggle[i];
+            
+            tr.addEventListener("click", function(e){
+                
+                                var elements = getAllElementsWithAttribute('data-alphabet', this.getAttribute('data-alphabet-title'), 'tr');
+            for(var k in elements){
+                elements[k].classList.add('open');
+            }
+        })
+                                
+            console.log(tr.getAttribute('data-alphabet-title'));
+        }
 
-        getAllElementsWithAttribute('data-alphabet-title', 'А', 'tr')
+        getAllElementsWithAttribute('data-alphabet', 'А', 'tr')
 
     </script>
 </body>
