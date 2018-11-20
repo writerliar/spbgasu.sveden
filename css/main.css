@@ -196,8 +196,36 @@ img {
 /*table*/
 th {
     color: #ffffff;
-    background-color: #357f93;
-    text-transform: uppercase;
     font-weight: 400;
+}
+
+.table-title {
     font-size: 17px;
+    text-transform: uppercase;
+    background-color: #357f93;
+    border: 1px solid #357f93;
+}
+
+.table-title th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+.table-subtitle {
+    font-size: 14px;
+    background-color: #69B4C9;
+    border: 1px solid #69B4C9;
+}
+
+.table-subtitle th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+td {
+    background-color: #fff;
+    border: 1px solid #69B4C9;
+}
+
+
+td:hover {
+    background-color: #d6d6d6;
 }
