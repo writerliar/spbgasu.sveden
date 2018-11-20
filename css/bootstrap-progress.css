@@ -1508,9 +1508,11 @@ hr {
     clip: auto
 }
 
+/*
 [role=button] {
     cursor: pointer
 }
+*/
 
 .h1,
 .h2,
@@ -4260,6 +4262,7 @@ tbody.collapse.in {
     transition-property: height, visibility
 }
 
+/*
 .caret {
     display: inline-block;
     width: 0;
@@ -4276,6 +4279,7 @@ tbody.collapse.in {
 .dropup {
     position: relative
 }
+*/
 
 .dropdown-toggle:focus {
     outline: 0

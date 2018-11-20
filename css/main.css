@@ -139,6 +139,7 @@ img {
     list-style: none;
     background-color: #fff;
     background-image: url(../img/background-pattern.png);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0 0 30px 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
@@ -150,7 +151,7 @@ img {
 .dropdown-link {
     display: block;
     padding: 5px 22px;
-    width: 100%;
+/*    width: 100%;*/
     font-weight: 400;
     text-transform: none;
 }
@@ -416,7 +417,7 @@ hr {
     font-size: 14px;
 }
 
-.page_content:not(:last-child) {
+.page-content:not(:last-child) {
     margin-bottom: 50px;
 }
 
@@ -509,4 +510,33 @@ hr {
 
 .alphabet {
     cursor: pointer;
+}
+
+/*bootstrap*/
+
+/*eduStandarts*/
+
+[role=button] {
+    cursor: pointer;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent
+}
+
+.dropdown,
+.dropup {
+    position: relative
+}
+
+.open > .dropdown-menu {
+    display: block
 }
