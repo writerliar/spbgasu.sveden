@@ -9,16 +9,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <link href="./css/normalize.css" rel="stylesheet">
-    <!--    -->
-<!--
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/sveden-base.css" rel="stylesheet">
-    <link href="./css/sveden-style.css" rel="stylesheet">
-    <link href="./css/style-table.css" rel="stylesheet">
--->
-    <!--    -->
-        <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <base target="_blank">
 </head>
 
@@ -26,7 +17,7 @@
 
     <div class="header" id="header">
         <div class="header-border-top"></div>
-        <div class="container">
+        <div class="container-table">
             <div class="main-name-wrapper">
                 <div class="logo-wrapper">
                     <a href="http://www.spbgasu.ru/">
@@ -96,108 +87,101 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="section" id="section">
-
-            <div class="form-group content" id="content" style="width: 100%">
-                <h2 id="page_content_header">
-                    Основные сведения
-                </h2>
-                <div class="page_content">
-                    <table class="table-no-more">
-                        <tr>
-                            <td class="table-no-more-title">
-                                Дата создания образовательной организации:
-                            </td>
-                            <td id="reg_date" itemprop="regDate">
-                                27.04.1832
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-no-more-title">
-                                Адрес:
-                            </td>
-                            <td id="address" itemprop="address">
-                                Россия, 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д.4
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-no-more-title">
-                                График работы образовательной организации:
-                            </td>
-                            <td id="work_time" itemprop="workTime" class="table-big-text">
-                                <p>
-                                    Для административно-управленческого персонала, научных работников, научно-вспомогательного персонала, научно-технического персонала, обслуживающего персонала и производственного персонала: понедельник – четверг 09:00 - 18:00 пятница 09:00 - 17:00 перерыв для отдыха и питания 13:00 - 13:48 выходные дни – суббота и воскресенье.
-                                </p>
-                                <p>
-                                    Режим рабочего времени для ППС в пределах 36-часовой шестидневной рабочей недели определяется с учетом выполнения преподавательской и других видов работы.
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-no-more-title">
-                                Контактные телефоны:
-                            </td>
-                            <td id="telephone" itemprop="telephone">
-                                (812) 575-05-34
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-no-more-title">
-                                Факс:
-                            </td>
-                            <td id="fax" itemprop="fax">
-                                (812) 316-58-72; 316-49-06
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-no-more-title">
-                                Адреса электронной почты:
-                            </td>
-                            <td id="email" itemprop="email">
-                                rector@spbgasu.ru
-                            </td>
-                        </tr>
-                    </table>
-                    <div>
-                        <h4>Учредители</h4>
-                        <table class="table table-striped table-bordered" id="founder">
-                            <tr class="table-title">
-                                <th style="width: 20%;">Наименование учредителя</th>
-                                <th style="width: 15%;">Фамилия, имя, отчество руководителя учредителя (ей) образовательной организации</th>
-                                <th style="width: 20%;">Адрес местонахождения учредителя(ей)</th>
-                                <th style="width: 15%;">Контактные телефоны</th>
-                                <th style="width: 15%;">Адрес электронной почты</th>
-                                <th style="width: 15%;">Адрес сайта учредителя(ей) в сети «Интернет»</th>
-                            </tr>
-                            <tr itemprop="uchredLaw">
-                                <td itemprop="nameUchred">Министерство науки и высшего образования РФ</td>
-                                <td itemprop="fullnameUchred">Министр науки и высшего образования Российской Федерации — Котюков Михаил Михайлович</td>
-                                <td itemprop="addressUchred">Россия, 125993, Москва, ул. Тверская, дом 11, ГСП-3</td>
-                                <td itemprop="telUchred">+7 (495) 547-13-07</td>
-                                <td itemprop="mailUchred">apply@minobrnauki.gov.ru</td>
-                                <td itemprop="websiteUchred">http://minobrnauki.gov.ru/</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <h4>Филиалы</h4>
-                        <table class="table table-striped table-bordered" id="branch">
-                            <tr class="table-title">
-                                <th style="width: 35%;">Наименование филиала</th>
-                                <th style="width: 35%;">Адрес местонахождения филиала образовательной организации</th>
-                                <th style="width: 30%;">Адрес официального сайта в сети «Интернет» (при наличии)</th>
-                            </tr>
-                            <tr itemprop="filInfo">
-                                <td colspan="3">Филиалы отсутствуют</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+    <div class="container-table">
+        <h2 id="page_content_header" class="main-title">
+            Основные сведения
+        </h2>
+        <div class="page-content">
+            <table class="table table-no-more">
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        Дата создания образовательной организации:
+                    </td>
+                    <td id="reg_date" itemprop="regDate">
+                        27.04.1832
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        Адрес:
+                    </td>
+                    <td id="address" itemprop="address">
+                        Россия, 190005, г. Санкт-Петербург, 2-я Красноармейская ул., д.4
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        График работы образовательной организации:
+                    </td>
+                    <td id="work_time" itemprop="workTime" class="table-big-text">
+                        <p>
+                            Для административно-управленческого персонала, научных работников, научно-вспомогательного персонала, научно-технического персонала, обслуживающего персонала и производственного персонала: понедельник – четверг 09:00 - 18:00 пятница 09:00 - 17:00 перерыв для отдыха и питания 13:00 - 13:48 выходные дни – суббота и воскресенье.
+                        </p>
+                        <p>
+                            Режим рабочего времени для ППС в пределах 36-часовой шестидневной рабочей недели определяется с учетом выполнения преподавательской и других видов работы.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        Контактные телефоны:
+                    </td>
+                    <td id="telephone" itemprop="telephone">
+                        (812) 575-05-34
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        Факс:
+                    </td>
+                    <td id="fax" itemprop="fax">
+                        (812) 316-58-72; 316-49-06
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-title table-no-more-title">
+                        Адреса электронной почты:
+                    </td>
+                    <td id="email" itemprop="email">
+                        rector@spbgasu.ru
+                    </td>
+                </tr>
+            </table>
+            <h4 class="subtitle">Учредители</h4>
+            <table class="table" id="founder">
+                <tr class="table-title">
+                    <th style="width: 20%;">Наименование учредителя</th>
+                    <th style="width: 15%;">Фамилия, имя, отчество руководителя учредителя (ей) образовательной организации</th>
+                    <th style="width: 20%;">Адрес местонахождения учредителя(ей)</th>
+                    <th style="width: 15%;">Контактные телефоны</th>
+                    <th style="width: 15%;">Адрес электронной почты</th>
+                    <th style="width: 15%;">Адрес сайта учредителя(ей) в сети «Интернет»</th>
+                </tr>
+                <tr itemprop="uchredLaw">
+                    <td itemprop="nameUchred">Министерство науки и высшего образования РФ</td>
+                    <td itemprop="fullnameUchred">Министр науки и высшего образования Российской Федерации — Котюков Михаил Михайлович</td>
+                    <td itemprop="addressUchred">Россия, 125993, Москва, ул. Тверская, дом 11, ГСП-3</td>
+                    <td itemprop="telUchred">+7 (495) 547-13-07</td>
+                    <td itemprop="mailUchred">apply@minobrnauki.gov.ru</td>
+                    <td itemprop="websiteUchred">
+                        <a href="https://minobrnauki.gov.ru/" class="link-special">https://minobrnauki.gov.ru/</a>
+                    </td>
+                </tr>
+            </table>
+            <h4 class="subtitle">Филиалы</h4>
+            <table class="table" id="branch">
+                <tr class="table-title">
+                    <th>Наименование филиала</th>
+                    <th>Адрес местонахождения филиала образовательной организации</th>
+                    <th>Адрес официального сайта в сети «Интернет» (при наличии)</th>
+                </tr>
+                <tr itemprop="filInfo">
+                    <td colspan="3">Филиалы отсутствуют</td>
+                </tr>
+            </table>
         </div>
-
-        <!--
+    </div>
+    <!--
             <div class="footer navbar-fixed-bottom">
                 <p class="container">
                     Раскрытие информации об образовательной организации в соответствии
@@ -207,9 +191,6 @@
                 </p>
             </div>
 -->
-    </div>
-
-
 </body>
 
 </html>
