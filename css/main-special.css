@@ -58,23 +58,21 @@ body {
 }
 
 .inner-link-pdf,
-.inner-link-pdf-blue,
-a {
+.inner-link-pdf-blue {
     padding-left: 35px;
 }
 
-.table th {
-    font-size: 26px;
-}
-
-.table td {
-    font-size: 26px;
-}
-
+.table th,
 .table-title {
     font-size: 26px;
 }
 
 .subtitle {
     font-size: 30px;
+}
+
+/*Временное решение за неимением лучшего. Не работает для масштаба обычной страницы до 200%*/
+
+td {
+    font-size: 20px;
 }
