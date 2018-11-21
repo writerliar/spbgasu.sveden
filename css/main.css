@@ -49,6 +49,12 @@ a:focus {
     max-width: 1090px;
 }
 
+.container-big-table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1260px;
+}
+
 img {
     /*	max-width: 100%; */
     height: auto;
@@ -70,7 +76,8 @@ img {
 
 .main-name-wrapper {
     display: flex;
-
+/*    max-width: 1000px;*/
+    margin: 0 auto;
     /*    временно*/
     margin-bottom: 40px;
 }
@@ -94,7 +101,8 @@ img {
 .main-name {
     margin: 0;
     margin-top: 40px;
-    max-width: 800px;
+    max-width: 914px;
+/*    max-width: 800px;*/
     text-align: center;
     font-family: "Century Gothic", Arial, sans-serif;
     color: #aa3c24;
@@ -106,7 +114,7 @@ img {
 .navigation-wrapper {
     display: flex;
     justify-content: flex-start;
-/*    flex-wrap: wrap;*/
+    /*    flex-wrap: wrap;*/
 
 }
 
@@ -164,7 +172,7 @@ img {
 .dropdown-link {
     display: block;
     padding: 5px 22px;
-/*    width: 100%;*/
+    /*    width: 100%;*/
     font-weight: 400;
     text-transform: none;
 }
@@ -283,6 +291,7 @@ td:hover:not(.table-no-more-title) {
 .teachers.open {
     display: table-row;
 }
+
 /**/
 
 
@@ -306,7 +315,7 @@ tr.table-subtitle {
 
 .table-normalize td:not(.table-section),
 .table-normalize th {
-/*    text-align: center;*/
+    /*    text-align: center;*/
     white-space: pre-line;
 }
 
