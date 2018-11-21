@@ -23,6 +23,12 @@ body {
     box-sizing: border-box;
 }
 
+.container-big-table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1582px;
+}
+
 .main-name {
     font-size: 30px;
     max-width: 1450px;
