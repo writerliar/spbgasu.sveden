@@ -219,7 +219,7 @@ th {
 }
 
 .table-title {
-    font-size: 17px;
+    font-size: 14px;
     text-transform: uppercase;
     background-color: #357f93;
     border: 1px solid #357f93;
@@ -241,7 +241,7 @@ th {
 }
 
 .table-subtitle {
-    font-size: 14px;
+    font-size: 12px;
     background-color: #69B4C9;
     border: 1px solid #69B4C9;
 }
@@ -252,6 +252,7 @@ th {
 }
 
 td {
+    font-size: 14px;
     background-color: #fff;
     border: 1px solid #69B4C9;
 }
