@@ -49,6 +49,12 @@ a:focus {
     max-width: 1090px;
 }
 
+.container-big-table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1260px;
+}
+
 img {
     /*	max-width: 100%; */
     height: auto;
@@ -70,7 +76,8 @@ img {
 
 .main-name-wrapper {
     display: flex;
-
+width: 1000px;
+    margin: 0 auto;
     /*    временно*/
     margin-bottom: 40px;
 }
