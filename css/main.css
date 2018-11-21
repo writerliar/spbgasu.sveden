@@ -76,7 +76,7 @@ img {
 
 .main-name-wrapper {
     display: flex;
-width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     /*    временно*/
     margin-bottom: 40px;
@@ -113,7 +113,7 @@ width: 1000px;
 .navigation-wrapper {
     display: flex;
     justify-content: flex-start;
-/*    flex-wrap: wrap;*/
+    /*    flex-wrap: wrap;*/
 
 }
 
@@ -171,7 +171,7 @@ width: 1000px;
 .dropdown-link {
     display: block;
     padding: 5px 22px;
-/*    width: 100%;*/
+    /*    width: 100%;*/
     font-weight: 400;
     text-transform: none;
 }
@@ -290,6 +290,7 @@ td:hover:not(.table-no-more-title) {
 .teachers.open {
     display: table-row;
 }
+
 /**/
 
 
@@ -313,7 +314,7 @@ tr.table-subtitle {
 
 .table-normalize td:not(.table-section),
 .table-normalize th {
-/*    text-align: center;*/
+    /*    text-align: center;*/
     white-space: pre-line;
 }
 
