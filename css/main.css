@@ -37,6 +37,21 @@ a:focus {
     text-decoration: underline;
 }
 
+.link-pdf-blue {
+    position: relative;
+    display: block;
+    margin-bottom: 18px;
+    padding-left: 25px;
+    color: #747474;
+    font-weight: 600;
+}
+
+.link-pdf:hover,
+.link-pdf-blue:hover {
+    color: #aa3b24;
+    text-decoration: underline;
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -279,7 +294,12 @@ td:hover:not(.table-no-more-title) {
     border-bottom: 2px solid;
 }
 
-
+.subtitle-small {
+    color: #357f93;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
 
 
@@ -393,23 +413,9 @@ hr {
     font-weight: 600;
 }
 
-.inner-link-pdf-blue {
-    position: relative;
-    display: block;
-    padding-left: 25px;
-    color: #357f93;
-    font-weight: 400;
-}
-
 .page-block .inner-link-pdf {
     padding: 0px 20px;
     padding-left: 43px;
-}
-
-.inner-link-pdf:hover,
-.inner-link-pdf-blue:hover {
-    color: #aa3b24;
-    text-decoration: underline;
 }
 
 .icon {
