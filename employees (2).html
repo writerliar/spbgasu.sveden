@@ -8634,7 +8634,7 @@
                                 <tr itemprop="teachingStaff" class="teachers" data-alphabet="Ч">
                                     <td itemprop="fio">Черновец Елена Георгиевна</td>
                                     <td itemprop="post">доцент</td>
-                                    <td itemprop="teachingDiscipline">Английский язык; Английский язык делового общения; Английский  язык профессионального общения</td>
+                                    <td itemprop="teachingDiscipline">Английский язык; Английский язык делового общения; Английский язык профессионального общения</td>
                                     <td itemprop="teachingLevel">высшее образование - специалитет, магистратура</td>
                                     <td itemprop="teachingQual">филолог-германист, учитель английского языка</td>
                                     <td itemprop="degree">кандидат наук</td>
@@ -9197,10 +9197,8 @@
     </div>
 
     <script>
-        //        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
         //        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
-//        Проверить наличие класса isOpened у alphabetToggle. В случае отсутствия всем преподам добавить класс open, alphabetToggle добавить класс isOpened. В случае наличия всем преподавателям удалить класс open, у переключателя удалить isOpened
-        
+
         var alphabetToggle = document.querySelectorAll('tr[data-alphabet-title]');
 
         function getAllElementsWithAttribute(attribute, value, tag) {
@@ -9220,60 +9218,22 @@
 
             tr.addEventListener("click", function(e) {
                 var elements = getAllElementsWithAttribute('data-alphabet', this.getAttribute('data-alphabet-title'), 'tr');
-                for (var k in elements) {
-                    elements[k].classList.add('open');
-                }
-                this.classList.add('isOpened'); // После расстановки класса open у преподов выставляет метку isOpened у переключателя
-            })
 
-            console.log(tr.getAttribute('data-alphabet-title'));
-        }
-
-        getAllElementsWithAttribute('data-alphabet', 'А', 'tr')
-
-    </script>
-    <!-- 
-        <script>
-        //        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
-        //        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
-        var alphabetToggle = document.querySelectorAll('tr[data-alphabet-title]');
-
-        function getAllElementsWithAttribute(attribute, value, tag) {
-            var matchingElements = [];
-            var allElements = document.getElementsByTagName(tag);
-            for (var i = 0, n = allElements.length; i < n; i++) {
-                if (allElements[i].getAttribute(attribute) === value) {
-                    // Element exists with attribute. Add to array.
-                    matchingElements.push(allElements[i]);
-                }
-            }
-            return matchingElements;
-        }
-
-        for (var i in alphabetToggle) {
-            var tr = alphabetToggle[i];
-
-            tr.addEventListener('click', function(e) {
-                var elements = getAllElementsWithAttribute('data-alphabet', this.getAttribute('data-alphabet-title'), 'tr');
-
-                for (var k in elements) {
-                    var alphabetShow = function() {
-                        alphabetItem.classList.contains('open'); // проверяет, есть ли у строки класс
+                if (this.classList.contains('isOpened')) { // Проверяет, есть ли isOpened у переключателя
+                    for (var k in elements) {
+                        elements[k].classList.remove('open'); // Если есть, удаляет его из преподов
                     }
+                    this.classList.remove('isOpened'); // После удаления класса open у преподов удаляет метку isOpened у переключателя
+                } else { // В противном случае
+                    for (var k in elements) {
+                        elements[k].classList.add('open'); // расставляет open у преподов
+                    }
+                    this.classList.add('isOpened'); // после расстановки у преподов выставляет метку isOpened у переключателя
                 }
-                if (alphabetShow = false) { // если класса нет, то...
-                    elements[k].classList.add('open'); // добавляет его
-                }
-                elements[k].classList.remove('open'); // в противном случае удаляет
+
             })
-
-            console.log(tr.getAttribute('data-alphabet-title'));
         }
-
-        getAllElementsWithAttribute('data-alphabet', 'А', 'tr')
-
     </script>
--->
 
 </body>
 
