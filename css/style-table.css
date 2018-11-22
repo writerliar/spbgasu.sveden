@@ -7,6 +7,10 @@
 .teachers.open {
     display: table-row;
 }
+
+.alphabet {
+    cursor: pointer;
+}
 /**/
 
 
