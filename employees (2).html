@@ -9199,6 +9199,8 @@
     <script>
         //        При клике на одну из data-alphabet-title открывать все последующие data-alphabet, совпадающие по содержанию с data-alphabet-title. При повторном клике все соответствующие data-alphabet необходимо скрыть.
         //        Задание со звездочкой: При клике не следующую alphabet-title, предыдущую необходимо также скрыть
+//        Проверить наличие класса isOpened у alphabetToggle. В случае отсутствия всем преподам добавить класс open, alphabetToggle добавить класс isOpened. В случае наличия всем преподавателям удалить класс open, у переключателя удалить isOpened
+        
         var alphabetToggle = document.querySelectorAll('tr[data-alphabet-title]');
 
         function getAllElementsWithAttribute(attribute, value, tag) {
@@ -9217,11 +9219,11 @@
             var tr = alphabetToggle[i];
 
             tr.addEventListener("click", function(e) {
-
                 var elements = getAllElementsWithAttribute('data-alphabet', this.getAttribute('data-alphabet-title'), 'tr');
                 for (var k in elements) {
                     elements[k].classList.add('open');
                 }
+                this.classList.add('isOpened'); // После расстановки класса open у преподов выставляет метку isOpened у переключателя
             })
 
             console.log(tr.getAttribute('data-alphabet-title'));
