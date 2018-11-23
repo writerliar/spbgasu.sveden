@@ -285,7 +285,7 @@ td {
 }
 
 
-td:hover:not(.table-no-more-title) {
+td:hover:not(.table-no-more-title):not(.table-section) {
     background-color: #d6d6d6;
 }
 
@@ -356,10 +356,11 @@ tr.table-subtitle {
 
 .table-section {
     text-transform: uppercase;
-    font-weight: 700;
+    color: #ffffff;
+    font-weight: 500;
     text-align: left;
     font-size: 13px;
-    background-color: #d6d6d6;
+    background-color: #A8D7E4;
 }
 
 .button-table {
@@ -456,6 +457,7 @@ hr {
 }
 
 .page-text-list {
+    background-color: #ffffff;
     background-color: #ffffff;
 }
 
