@@ -301,7 +301,10 @@ td:hover:not(.table-no-more-title) {
     font-size: 20px;
 }
 
-
+.subtitle-special {
+    font-size: 18px;
+    border-bottom: 2px solid;
+}
 
 
 /*--------------------------------------------------------------------*/
@@ -405,7 +408,7 @@ hr {
     height: 2px;
 }
 
-.inner-link-pdf {
+.link-pdf {
     position: relative;
     display: block;
     padding-left: 25px;
@@ -413,7 +416,7 @@ hr {
     font-weight: 600;
 }
 
-.page-block .inner-link-pdf {
+.page-block .link-pdf {
     padding: 0px 20px;
     padding-left: 43px;
 }
@@ -433,7 +436,7 @@ hr {
 }
 
 .page-block {
-    border: 1px dashed #bababa;
+    border: 1px dashed #357f93;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
@@ -441,15 +444,19 @@ hr {
 
 /*ИСПРАВИТЬ СТИЛЬ ЧЕРЕЗ ID*/
 
-#content .page-subtitle {
+.page-subtitle {
     padding: 10px 10px;
     padding-left: 20px;
     margin: 0;
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
-    background-color: #bababa;
+    background-color: #357f93;
     border-bottom: 1px dashed #ffffff;
+}
+
+.page-text-list {
+    background-color: #ffffff;
 }
 
 .page-text p,
