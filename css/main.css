@@ -7,8 +7,6 @@
 
 body {
     margin: 0;
-    
-    margin: 0px 20px;
     padding: 0;
     font-family: "Century Gothic", Arial, sans-serif;
     font-size: 14px;
@@ -69,6 +67,7 @@ a:focus {
 .container-big-table {
     margin: 0 auto;
     max-width: 100%;
+    margin: 0px 20px;
 }
 
 img {
@@ -565,6 +564,12 @@ hr {
 
 .alphabet {
     cursor: pointer;
+}
+
+.alphabet td {
+    color: #081073;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 /*bootstrap*/
