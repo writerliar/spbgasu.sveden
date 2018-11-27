@@ -566,6 +566,12 @@ hr {
     cursor: pointer;
 }
 
+.alphabet td {
+    color: #081073;
+    font-weight: 600;
+    font-size: 17px;
+}
+
 /*bootstrap*/
 
 /*eduStandarts*/
