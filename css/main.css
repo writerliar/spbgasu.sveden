@@ -312,6 +312,16 @@ td:hover:not(.table-no-more-title):not(.table-section) {
     text-decoration: underline
 }
 
+.footer {
+    font-size: 11px;
+/*
+    position: absolute;
+    bottom: 0;
+    width: 1008px;
+    max-width: 100%;
+*/
+}
+
 
 /*--------------------------------------------------------------------*/
 
@@ -485,7 +495,7 @@ hr {
     display: block;
     text-align: right;
     font-weight: 600;
-    text-decoration: none;    
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -517,7 +527,7 @@ hr {
     margin: 0;
     text-align: left;
     border: none;
-/*    border-top: 1px solid #69b4c9;*/
+    /*    border-top: 1px solid #69b4c9;*/
 }
 
 .table-white {
