@@ -487,13 +487,13 @@ hr {
     justify-content: space-between;
 }
 
-.inner-link {
+.link {
     position: relative;
     color: #357f93;
     margin-left: 25px;
 }
 
-.result-list-item .inner-link {
+.result-list-item .link {
     margin-left: 0;
 }
 
