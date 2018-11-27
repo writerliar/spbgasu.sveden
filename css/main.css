@@ -71,7 +71,7 @@ a:focus {
 }
 
 img {
-    /*	max-width: 100%; */
+    	max-width: 100%; 
     height: auto;
 }
 
@@ -112,8 +112,8 @@ img {
     margin-right: 27px;
     margin-left: 37px;
     z-index: 2;
-    width: 136px;
-    height: 152px;
+    min-width: 136px;
+/*    min-height: 152px;*/
     -webkit-box-shadow: 0px 0px 22px -1px #c4c4c4;
             box-shadow: 0px 0px 22px -1px #c4c4c4;
     background-image: url(../img/background-pattern.png);
