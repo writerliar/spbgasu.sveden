@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.wrapper {
+    margin: 10px 10px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+th,
+td:not(.table-section) {
+    text-align: center;
+}
+
+th {
+    background-color: #bababa;
+}
+
+.table-section {
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: #e7e7e7;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}

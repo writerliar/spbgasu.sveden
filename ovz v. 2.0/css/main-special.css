@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #747474;
+    background-image: url(../img/background-pattern.png);
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container-table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1582px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container-big-table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1582px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.main-name {
+    font-size: 30px;
+    max-width: 1450px;
+}
+
+.main-navigation,
+.dropdown-menu,
+.special-menu {
+    font-size: 26px;
+}
+
+.main-title {
+    font-size: 30px;
+}
+
+.page-content {
+    margin-bottom: 100px;
+}
+
+.dropdown-menu {
+    margin-bottom: 50px;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    left: 0px;
+}
+
+.page-block .icon {
+    left: 13px;
+}
+
+.inner-link-pdf,
+.inner-link-pdf-blue {
+    padding-left: 35px;
+}
+
+.table th,
+.table-title {
+    font-size: 26px;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+/*Временное решение за неимением лучшего. Не работает для масштаба обычной страницы до 200%*/
+
+td {
+    font-size: 20px;
+}
