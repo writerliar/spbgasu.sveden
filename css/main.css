@@ -350,7 +350,7 @@ td:hover:not(.table-no-more-title):not(.table-section) {
 }
 
 .teachers.open,
-.levels {
+.levels.open {
     display: table-row;
 }
 
