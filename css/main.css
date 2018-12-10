@@ -623,12 +623,19 @@ hr {
     cursor: pointer;
 }
 
-.alphabet td {
+.alphabet td,
+.level td {
     color: #081073;
     font-weight: 600;
+}
+
+.alphabet td {
     font-size: 17px;
 }
 
+.level td {
+    font-size: 14px;
+}
 /*bootstrap*/
 
 /*eduStandarts*/
