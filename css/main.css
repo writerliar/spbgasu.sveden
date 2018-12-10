@@ -618,7 +618,8 @@ hr {
     display: block;
 }
 
-.alphabet {
+.alphabet,
+.level {
     cursor: pointer;
 }
 

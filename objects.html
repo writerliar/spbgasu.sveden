@@ -559,7 +559,7 @@
                         <th>Приспособленность помещений для использования инвалидами и лицами с ограниченными возможностями здоровья</th>
                     </tr>
                     <tr data-level-title="bachelor">
-                        <td colspan="6" class="table-section">Бакалавриат</td>
+                        <td colspan="6" class="table-section level">Бакалавриат</td>
                     </tr>
                     <tr itemprop="purposePrac" class="levels" data-level="bachelor">
                         <td itemprop="eduCode" rowspan="7">01.03.02</td>
@@ -2978,7 +2978,7 @@
                         </td>
                         <td itemprop="purposePracOvz">Частично приспособлено</td>
                     </tr>
-                    <tr itemprop="purposePrac">
+                    <tr itemprop="purposePrac" class="levels" data-level="bachelor">
                         <td>Современные системы климатизации зданий</td>
                         <td>Учебная лаборатория теплогазоснабжения и вентиляции для выполнения лабораторных работ, проведения занятий лекционного типа, занятий семинарского типа, курсового проектирования (выполнения курсовых работ), групповых и индивидуальных консультаций, текущего контроля и промежуточной аттестации <b>№341</b></td>
                         <td class="special-places-list">
@@ -3000,7 +3000,7 @@
                         </td>
                         <td itemprop="purposePracOvz">Частично приспособлено</td>
                     </tr>
-                    <tr itemprop="purposePrac">
+                    <tr itemprop="purposePrac" class="levels" data-level="bachelor">
                         <td rowspan="2">Электроснабжение</td>
                         <td>Учебная лаборатория электроэнергетики и электротехники для выполнения лабораторных работ, проведения занятий лекционного типа, занятий семинарского типа, курсового проектирования (выполнения курсовых работ), групповых и индивидуальных консультаций, текущего контроля и промежуточной аттестации <b>№235Е</b></td>
                         <td class="special-places-list">
@@ -9211,10 +9211,10 @@
                         </td>
                         <td itemprop="purposePracOvz">Частично приспособлено</td>
                     </tr>
-                    <tr>
-                        <td colspan="6" class="table-section">Магистратура</td>
+                    <tr data-level-title="magistr">
+                        <td colspan="6" class="table-section level">Магистратура</td>
                     </tr>
-                    <tr itemprop="purposePrac">
+                    <tr itemprop="purposePrac" class="levels" data-level="magistr">
                         <td itemprop="eduCode" rowspan="4">01.04.02</td>
                         <td itemprop="eduName" rowspan="4">Прикладная математика и информатика</td>
                         <td rowspan="2">Иностранный язык (технический перевод)</td>
@@ -13819,6 +13819,45 @@
 
     <script src="js/open-table.js"></script>
     <script src="js/show-more-list.js"></script>
+    
+    <script>
+        
+        var levelToggle = document.querySelectorAll('tr[data-level-title]');
+
+        function getAllElementsWithAttribute(attribute, value, tag) {
+            var matchingElements = [];
+            var allElements = document.getElementsByTagName(tag);
+            for (var i = 0, n = allElements.length; i < n; i++) {
+                if (allElements[i].getAttribute(attribute) === value) {
+                    // Element exists with attribute. Add to array.
+                    matchingElements.push(allElements[i]);
+                }
+            }
+            return matchingElements;
+        }
+
+        for (var i in levelToggle) {
+            var tr = levelToggle[i];
+
+            tr.addEventListener("click", function(e) {
+                var elements = getAllElementsWithAttribute('data-level', this.getAttribute('data-level-title'), 'tr');
+
+                if (this.classList.contains('isOpened')) { // Проверяет, есть ли isOpened у переключателя
+                    for (var k in elements) {
+                        elements[k].classList.remove('open'); // Если есть, удаляет его из преподов
+                    }
+                    this.classList.remove('isOpened'); // После удаления класса open у преподов удаляет метку isOpened у переключателя
+                } else { // В противном случае
+                    for (var k in elements) {
+                        elements[k].classList.add('open'); // расставляет open у преподов
+                    }
+                    this.classList.add('isOpened'); // после расстановки у преподов выставляет метку isOpened у переключателя
+                }
+
+            })
+        }
+
+    </script>
 </body>
 
 </html>
