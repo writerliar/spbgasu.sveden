@@ -198,7 +198,7 @@
                     '</div>'+
                     '<div class="bvi-col-xs-12 bvi-col-sm-12 bvi-col-md-12 bvi-col-lg-12">'+
                     '<div class="bvi-rows">'+
-                    '<div class="bvi-copy"><a href="http://bvi.isvek.ru/" target="_blank" title="isvek.ru Версия для слабовидящих">isvek.ru Версия для слабовидящих</a><sup>v1.0.6</sup></div>'+
+                    '<div class="bvi-copy"><a href="http://bvi.isvek.ru/" target="_blank" </a><sup>v1.0.6</sup></div>'+
                     '</div>'+
                     '</div>'+
                     '</div>'+
