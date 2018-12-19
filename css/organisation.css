@@ -1,0 +1,160 @@
+/* old style */
+
+h1 {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #aa3c24;
+    padding-left: 10px;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    background-image: url("../img/background-pattern.png");
+}
+
+/*new style*/
+
+/**/
+
+/*
+ul {
+    border: 2px solid black;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.family-tree {
+/*
+    display: flex;
+    justify-content: space-between;
+*/
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+}
+
+.general-child-list {
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;    
+}
+
+
+.general-child {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #7a7a7a;
+}
+
+
+.child-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.parent-link {
+    display: block;
+    padding: 10px;
+    background-color: #aa3c24;
+    text-align: center;
+    color: #ffffff;
+}
+
+.parent-wrapper {
+    width: 200px;
+}
+
+.child-list-item {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #7a7a7a;
+}
+
+.child-list-item:not(:first-child) {
+    border-top: none;
+}
+
+.child-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #747474;
+}
+
+.child-wrapper {
+/*    position: absolute;*/
+}
+
+/*vice-rector-style*/
+
+.container {
+    margin-bottom: 50px;
+}
+
+.vice-rectors {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-vice-rector-wrapper {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 200px;
+}
+
+.department-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #747474;
+}
+
+.vice-rector-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #357f93;
+}
+
+.vice-rector-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: none;
+
+    text-align: center;
+    list-style: none;
+
+}
+
+.vice-rector-wrapper {
+    width: 200px;
+}
+
+
+.departments-list {
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*  margin-right: 20px;*/
+}
+
+.department {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #7a7a7a;
+}
+
+.department:not(:first-child) {
+    border-top: none;
+}
