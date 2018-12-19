@@ -9,9 +9,11 @@ h1 {
 
 body {
     font-family: Arial;
-    font-size: 16px;
+    font-size: 14px;
     background-image: url("../img/background-pattern.png");
 }
+
+
 
 /*new style*/
 
@@ -27,7 +29,7 @@ a {
     text-decoration: none;
 }
 
-.family-tree {
+.first-line-tree {
 /*
     display: flex;
     justify-content: space-between;
@@ -36,6 +38,14 @@ a {
     margin: 0;
     
     list-style: none;
+}
+
+.parent-line {
+    margin: 0 auto;
+}
+
+.parent-1 {
+    margin-top: 50px;
 }
 
 .general-child-list {
@@ -50,6 +60,7 @@ a {
     position: relative;
     background-color: #ffffff;
     border: 1px solid #7a7a7a;
+    width: 200px;
 }
 
 
@@ -57,18 +68,31 @@ a {
     padding: 0;
     margin: 0;
     list-style: none;
+    width: 200px;
 }
 
 .parent-link {
     display: block;
+    margin: 0 auto;
+/*    margin-right: 20px; */
+    margin-bottom: 30px;
     padding: 10px;
+    width: 300px;
     background-color: #aa3c24;
+    font-size: 16px;
+    font-weight: 600;
     text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .parent-wrapper {
-    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: start;
+/*    justify-content: space-between;*/
+/*    width: 200px;*/
 }
 
 .child-list-item {
@@ -89,7 +113,17 @@ a {
 }
 
 .child-wrapper {
-/*    position: absolute;*/
+    position: absolute;
+}
+
+.child-1 {    
+    top: 68px;
+    left: 25%;
+}
+
+.child-2 {
+    top: -45px;
+    right: 22%;
 }
 
 /*vice-rector-style*/
@@ -120,7 +154,10 @@ a {
 .vice-rector-link {
     display: block;
     padding: 10px;
+    margin-bottom: 25px;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 600; 
     color: #ffffff;
     background-color: #357f93;
 }
