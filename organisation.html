@@ -6,8 +6,473 @@
     <title>SPbGASU Organisation Chart</title>
     <link rel="stylesheet" href="css/organisation.css">
     <style>
+        .container {
+            width: 731px;
+            min-height: 1207px;
+            margin-bottom: 50px;
+            position: relative;
+        }
 
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:hover:not(.department-link):not(.child-link) {
+            color: #ffffff;
+        }
+
+        .first-line-tree {
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+        }
+
+        .parent-line {
+            margin: 0 auto;
+        }
+
+        .parent-1 {
+            margin-top: 50px;
+        }
+
+        .general-child-list {
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+            font-size: 13px;
+        }
+
+
+        .general-child {
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #7a7a7a;
+            width: 150px;
+        }
+
+
+        .child-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 150px;
+        }
+
+        .parent-link {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-bottom: 30px;
+            padding: 10px;
+            width: 200px;
+            background-color: #aa3c24;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .parent-wrapper {
+            position: relative;
+            display: flex;
+            align-items: start;
+        }
+
+        .child-list-item {
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #7a7a7a;
+        }
+
+        .child-list-item:not(:first-child) {
+            border-top: none;
+        }
+
+
+
+        .child-link {
+            position: relative;
+            display: block;
+            padding: 10px;
+            font-size: 13px;
+            text-align: center;
+            color: #747474;
+        }
+
+        .child-wrapper {
+            position: absolute;
+        }
+
+        .child-1 {
+            top: -11px;
+            right: 230px;
+        }
+
+        .child-2 {
+            top: 50px;
+            right: 23px;
+            transform: rotate(-90deg);
+        }
+
+        .vice-rectors {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .main-vice-rector-wrapper {
+            position: absolute;
+            top: 67px;
+            margin-bottom: 50px;
+            width: 150px;
+        }
+
+        .department-link {
+            display: block;
+            padding: 10px;
+            font-size: 13px;
+            text-align: center;
+            color: #747474;
+        }
+
+        .vice-rector-link {
+            position: relative;
+            display: block;
+            padding: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #357f93;
+        }
+
+        .vice-rector-list {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: none;
+
+            text-align: center;
+            list-style: none;
+        }
+
+        .vice-rector-wrapper {
+            position: absolute;
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        .main-vice-rector-link {
+            background-color: #747474;
+        }
+
+        .vice-rector-4 {
+            top: 60px;
+            left: 177px;
+        }
+
+        .vice-rector-2 {
+            left: 200px;
+            top: 356px;
+            width: 300px;
+        }
+
+
+        .vice-rector-3 {
+            top: 514px;
+            left: 0px;
+        }
+
+        .vice-rector-5 {
+            top: 384px;
+            right: 11px;
+        }
+
+        .vice-rector-1 {
+            top: 800px;
+        }
+
+        .vice-rector-6 {
+            right: 11px;
+            top: 915px;
+        }
+
+
+        .departments-list {
+            border: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .department {
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #7a7a7a;
+        }
+
+        .department:not(:first-child) {
+            border-top: none;
+        }
+
+
+        /*lines style*/
+
+
+        .vice-rector-link::before {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            height: 25px;
+            width: 2px;
+            background-color: inherit;
+        }
+
+
+        .child-list-item::before {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            width: 20px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .parent-link-1::before {
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            left: -30px;
+            width: 30px;
+            height: 2px;
+            background-color: inherit;
+        }
+
+        .parent-link-2::before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            left: -106px;
+            width: 106px;
+            height: 2px;
+            background-color: inherit;
+        }
+
+        .parent-link-2::after {
+            content: "";
+            position: absolute;
+            top: 30%;
+            left: 10px;
+            height: 783px;
+            width: 2px;
+            background-color: inherit;
+        }
+
+        .general-child-link::before {
+            content: "";
+            position: absolute;
+            bottom: -38px;
+            left: 50%;
+            height: 38px;
+            width: 2px;
+            background-color: #aa3c24;
+        }
+
+        .main-vice-rector-link::after,
+        .vice-rector-link-3::after,
+        .vice-rector-link-1::after {
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            right: -8px;
+            width: 8px;
+            height: 2px;
+            background-color: #747474;
+        }
+
+        .main-vice-rector-link::after {
+            width: 27px;
+            right: -27px;
+        }
+
+        .vice-rector-link-5::after,
+        .vice-rector-link-6::after {
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            left: -31px;
+            width: 31px;
+            height: 2px;
+            background-color: #747474;
+        }
+
+        .vice-rector-link-2::after,
+        .vice-rector-link-4::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            background-color: #747474;
+        }
+
+
+        .vice-rector-link-2::after {
+            bottom: 50%;
+            left: -41px;
+            width: 41px;
+        }
+
+        .main-vice-rector-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: 157px;
+            height: 741px;
+            width: 2px;
+            background-color: #747474;
+        }
+
+        .vice-rector-4::before {
+            content: "";
+            position: absolute;
+            bottom: -26px;
+            left: -18px;
+            width: 372px;
+            height: 2px;
+            background-color: #747474;
+        }
+
+        .vice-rector-5::before {
+            content: "";
+            position: absolute;
+            top: -51px;
+            /*    left: -44px;*/
+            left: -31px;
+            height: 606px;
+            width: 2px;
+            background-color: #747474;
+        }
+
+
+        .vice-rector-link-4::after {
+            content: "";
+            position: absolute;
+            right: -12px;
+            bottom: 50%;
+            width: 12px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .parent-2::before {
+            content: "";
+            position: absolute;
+            top: 157px;
+            right: 199px;
+            width: 192px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-5::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: -19px;
+            width: 20px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-6::after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: -19px;
+            width: 20px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-2::before {
+            content: "";
+            position: absolute;
+            top: 27px;
+            right: -42px;
+            width: 42px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .general-child-link::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: -12px;
+            height: 70px;
+            width: 2px;
+            background-color: #aa3c24;
+        }
+
+        .child-2::before {
+            content: "";
+            position: absolute;
+            top: -95px;
+            right: -29px;
+            width: 161px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-2::after {
+            content: "";
+            position: absolute;
+            top: -37px;
+            right: 40px;
+            width: 295px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-4::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: -12px;
+            height: 742px;
+            width: 2px;
+            background-color: #aa3c24;
+        }
+
+        .main-vice-rector-wrapper::after,
+        .vice-rector-3::before,
+        .vice-rector-1::before {
+            content: "";
+            position: absolute;
+            top: 24px;
+            right: -17px;
+            width: 17px;
+            height: 2px;
+            background-color: #aa3c24;
+        }
+
+        .vice-rector-3::before {
+            top: 19px;
+        }
+
+        .vice-rector-1::before {
+            top: 32px;
+        }
     </style>
+    <base target="_blank">
 </head>
 
 <body>
@@ -17,11 +482,11 @@
             <ul class="first-line-tree">
                 <li class="parent-line parent-1">
                     <div class="parent-wrapper">
-                        <a href="#" class="parent-link">Academic Council</a>
+                        <a href="#" class="parent-link parent-link-1">Academic Council</a>
                         <div class="child-wrapper child-1">
                             <ul class="general-child-list">
                                 <li class="general-child">
-                                    <a href="#" class="child-link">Dissertation Committee</a>
+                                    <a href="#" class="child-link general-child-link">Dissertation Committee</a>
                                 </li>
                             </ul>
                         </div>
@@ -29,7 +494,7 @@
                 </li>
                 <li class="parent-line parent-2">
                     <div class="parent-wrapper">
-                        <a href="#" class="parent-link">Rector</a>
+                        <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameR/id370/" class="parent-link parent-link-2">Rector</a>
                         <div class="child-wrapper child-2">
                             <ul class="child-list">
                                 <li class="child-list-item">
@@ -42,7 +507,7 @@
                                     <a href="#" class="child-link">Front Office</a>
                                 </li>
                                 <li class="child-list-item">
-                                    <a href="#" class="child-link">Отдел мобилизационной подготовки</a>
+                                    <a href="#" class="child-link">Mobilization Arrangements Unit</a>
                                 </li>
                             </ul>
                         </div>
@@ -53,25 +518,25 @@
             <ul class="vice-rectors">
                 <li class="main-vice-rector">
                     <div class="main-vice-rector-wrapper">
-                        <a href="#" class="vice-rector-link">Vice Rector</a>
+                        <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameL/id594/" class="vice-rector-link main-vice-rector-link">First Vice Rector</a>
                         <ul class="departments-list">
                             <li class="department">
                                 <a href="#" class="department-link">Scientific Research Office</a>
                             </li>
                             <li class="department">
-                                <a href="#" class="department-link">International Education and Cooperation Office</a>
+                                <a href="http://www.spbgasu.ru/en/International_Relations_Department_/Department_of_international_education_and_cooperation/" class="department-link">International Education and Cooperation Office</a>
                             </li>
                             <li class="department">
                                 <a href="#" class="department-link">Education Quality Assurance Office</a>
                             </li>
                             <li class="department">
-                                <a href="#" class="department-link">Information Technulogies Office</a>
+                                <a href="#" class="department-link">Information Technologies Office</a>
                             </li>
                             <li class="department">
-                                <a href="#" class="department-link">Library</a>
+                                <a href="http://www.spbgasu.ru/en/Library/" class="department-link">Library</a>
                             </li>
                             <li class="department">
-                                <a href="#" class="department-link">Publishing and Pulygraphic Office</a>
+                                <a href="#" class="department-link">Publishing and Polygraphic Office</a>
                             </li>
                             <li class="department">
                                 <a href="#" class="department-link">Project Management Office 'Smart City'</a>
@@ -80,8 +545,8 @@
                     </div>
                     <ul class="vice-rector-list">
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Academic Affairs</a>
+                            <div class="vice-rector-wrapper vice-rector-1">
+                                <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameG/id627/" class="vice-rector-link vice-rector-link-1">Vice Rector for Academic Affairs</a>
                                 <ul class="departments-list">
                                     <li class="department">
                                         <a href="#" class="department-link">Academic Work Office</a>
@@ -102,11 +567,11 @@
                             </div>
                         </li>
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Science and Technulogy Affairs and Further Education</a>
+                            <div class="vice-rector-wrapper vice-rector-2">
+                                <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameP/id979/" class="vice-rector-link vice-rector-link-2">Vice Rector for Science and Technology Affairs and Continuing Professional Development</a>
                                 <ul class="departments-list">
                                     <li class="department">
-                                        <a href="#" class="department-link">Scientific and Industrial Consulting Centre in Geotechnulogies</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/centre_of_geotechnologies/" class="department-link">Scientific and Industrial Consulting Centre in Geotechnologies</a>
                                     </li>
                                     <li class="department">
                                         <a href="#" class="department-link">Continuing Professional Education Unit</a>
@@ -118,7 +583,7 @@
                                         <a href="#" class="department-link">Continuing Professional Development Centre of the Faculty of Automobile and Road Building</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Driving Schoul</a>
+                                        <a href="#" class="department-link">Driving School</a>
                                     </li>
                                     <li class="department">
                                         <a href="#" class="department-link">Educational and Consulting Centre for Project Management</a>
@@ -130,41 +595,41 @@
                                         <a href="#" class="department-link">Office for Scientific and Technulogical Work</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Institute of Design and Survey of Building Constructions, Buildings and Structures</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Institute_of_designing_and_inspections_of_building_designs-_buildings_and_constructions/" class="department-link">Institute of Design and Survey of Building Constructions, Buildings and Structures</a>
                                     </li>
                                     <li class="department">
                                         <a href="#" class="department-link">Design Institute for Construction and Housing and Utility Complex</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Institute of Traffic Safety</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Institute_of_traffic_safety/" class="department-link">Institute of Traffic Safety</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Institute of Construction and Technical Expertise</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Institute_of_construction_technical_expertise_of_SPSUACE/" class="department-link">Institute of Construction and Technical Expertise</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Centre for Nonstate Expertise of Project Documentation and Engineering Survey Results</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/Centre_non-state_expert/" class="department-link">Centre for Nonstate Expertise of Project Documentation and Engineering Survey Results</a>
                                     </li>
                                     <li class="department">
                                         <a href="#" class="department-link">SPbGASU Test Centre</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Mechanical Test Centre for Engineering Constructions</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/Centre_of_mechanical_testing/" class="department-link">Mechanical Test Centre for Engineering Constructions</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Test Centre for Construction Materials and Products</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/Centre_of_testing_building_materialsand_products/" class="department-link">Test Centre for Construction Materials and Products</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Centre for Physical and Technical Tests of Engineering Constructions 'Block'</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/Centre_of_physicotechnical/" class="department-link">Centre for Physical and Technical Tests of Engineering Constructions 'Block'</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Public Relations and Youth Pulicy</a>
+                            <div class="vice-rector-wrapper vice-rector-3">
+                                <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameL/id578/" class="vice-rector-link vice-rector-link-3">Vice Rector for Public Relations and Youth Pulicy</a>
                                 <ul class="departments-list">
                                     <li class="department">
-                                        <a href="#" class="department-link">Office for Social Welfare and Extracurricular Activities</a>
+                                        <a href="http://www.spbgasu.ru/en/Students-_Life/Department_of_social_and_extra-curriculum_work/" class="department-link">Office for Social Welfare and Extracurricular Activities</a>
                                     </li>
                                     <li class="department">
                                         <a href="#" class="department-link">Public Relations Office</a>
@@ -176,8 +641,8 @@
                             </div>
                         </li>
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Economics and Financial Affairs</a>
+                            <div class="vice-rector-wrapper vice-rector-4">
+                                <a href="http://www.spbgasu.ru/en/who_is_who/university_staff/nameG/id579/" class="vice-rector-link vice-rector-link-4">Vice Rector for Economics and Financial Affairs</a>
                                 <ul class="departments-list">
                                     <li class="department">
                                         <a href="#" class="department-link">Accounting Office</a>
@@ -195,8 +660,8 @@
                             </div>
                         </li>
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Administration and Legal Matters</a>
+                            <div class="vice-rector-wrapper vice-rector-5">
+                                <a href="#" class="vice-rector-link vice-rector-link-5">Vice Rector for Administration and Legal Matters</a>
                                 <ul class="departments-list">
                                     <li class="department">
                                         <a href="#" class="department-link">Integrated Security Office</a>
@@ -226,8 +691,8 @@
                             </div>
                         </li>
                         <li class="vice-rector">
-                            <div class="vice-rector-wrapper">
-                                <a href="#" class="vice-rector-link">Vice Rector for Technical Affairs</a>
+                            <div class="vice-rector-wrapper vice-rector-6">
+                                <a href="#" class="vice-rector-link vice-rector-link-6">Vice Rector for Technical Affairs</a>
                                 <ul class="departments-list">
                                     <li class="department">
                                         <a href="#" class="department-link">Electric Power Systems Unit</a>
@@ -239,7 +704,7 @@
                                         <a href="#" class="department-link">Maintenance Unit</a>
                                     </li>
                                     <li class="department">
-                                        <a href="#" class="department-link">Project studio</a>
+                                        <a href="http://www.spbgasu.ru/en/Scientific-Research_and_Innovation/Science_research_and_design_centers_at_university/Design_studio/" class="department-link">Project studio</a>
                                     </li>
                                 </ul>
                             </div>
