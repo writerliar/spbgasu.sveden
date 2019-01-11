@@ -82,13 +82,18 @@ a:hover:not(.department-link):not(.child-link) {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .parent-wrapper {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
 }
 
 .child-list-item {
@@ -122,7 +127,9 @@ a:hover:not(.department-link):not(.child-link) {
 .child-2 {
     top: 50px;
     right: 23px;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 .vice-rectors {
@@ -160,8 +167,12 @@ a:hover:not(.department-link):not(.child-link) {
 }
 
 .vice-rector-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     margin: none;
 

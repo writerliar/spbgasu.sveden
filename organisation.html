@@ -74,12 +74,17 @@
             text-align: center;
             text-transform: uppercase;
             color: #ffffff;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
 
         .parent-wrapper {
             position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: start;
         }
 
@@ -92,8 +97,6 @@
         .child-list-item:not(:first-child) {
             border-top: none;
         }
-
-
 
         .child-link {
             position: relative;
@@ -116,6 +119,8 @@
         .child-2 {
             top: 50px;
             right: 23px;
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
 
@@ -154,7 +159,11 @@
         }
 
         .vice-rector-list {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
             padding: 0;
             margin: none;
@@ -471,6 +480,7 @@
         .vice-rector-1::before {
             top: 32px;
         }
+
     </style>
     <base target="_blank">
 </head>
