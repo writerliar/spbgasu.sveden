@@ -83,7 +83,7 @@ a:hover:not(.department-link):not(.child-link) {
     text-transform: uppercase;
     color: #ffffff;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .parent-wrapper {
@@ -92,8 +92,8 @@ a:hover:not(.department-link):not(.child-link) {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
 }
 
 .child-list-item {
@@ -128,8 +128,8 @@ a:hover:not(.department-link):not(.child-link) {
     top: 50px;
     right: 23px;
     -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .vice-rectors {
@@ -171,8 +171,8 @@ a:hover:not(.department-link):not(.child-link) {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0;
     margin: none;
 
@@ -191,19 +191,20 @@ a:hover:not(.department-link):not(.child-link) {
 }
 
 .vice-rector-4 {
-    top: 60px;
+    top: 130px;
     left: 177px;
+    width: 201px;
 }
 
 .vice-rector-2 {
     left: 200px;
-    top: 356px;
+    top: 583px;
     width: 300px;
 }
 
 
 .vice-rector-3 {
-    top: 514px;
+    top: 550px;
     left: 0px;
 }
 
@@ -213,7 +214,7 @@ a:hover:not(.department-link):not(.child-link) {
 }
 
 .vice-rector-1 {
-    top: 800px;
+    top: 815px;
 }
 
 .vice-rector-6 {
@@ -317,8 +318,8 @@ a:hover:not(.department-link):not(.child-link) {
 }
 
 .main-vice-rector-link::after {
-    width: 27px;
-    right: -27px;
+    width: 135px;
+    right: -129px;
 }
 
 .vice-rector-link-5::after,
@@ -332,8 +333,7 @@ a:hover:not(.department-link):not(.child-link) {
     background-color: #747474;
 }
 
-.vice-rector-link-2::after,
-.vice-rector-link-4::after {
+.vice-rector-link-2::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -352,7 +352,7 @@ a:hover:not(.department-link):not(.child-link) {
     position: absolute;
     top: 16px;
     left: 157px;
-    height: 741px;
+    height: 756px;
     width: 2px;
     background-color: #747474;
 }
@@ -360,7 +360,7 @@ a:hover:not(.department-link):not(.child-link) {
 .vice-rector-4::before {
     content: "";
     position: absolute;
-    bottom: -26px;
+    top: 444px;
     left: -18px;
     width: 372px;
     height: 2px;
@@ -370,10 +370,9 @@ a:hover:not(.department-link):not(.child-link) {
 .vice-rector-5::before {
     content: "";
     position: absolute;
-    top: -51px;
-    /*    left: -44px;*/
+    top: 37px;
     left: -31px;
-    height: 606px;
+    height: 516px;
     width: 2px;
     background-color: #747474;
 }
@@ -382,11 +381,11 @@ a:hover:not(.department-link):not(.child-link) {
 .vice-rector-link-4::after {
     content: "";
     position: absolute;
-    right: -12px;
-    bottom: 50%;
-    width: 12px;
-    height: 2px;
-    background-color: #aa3c24;
+    left: 50%;
+    top: -48px;
+    width: 2px;
+    height: 48px;
+    background-color: #747474;
 }
 
 .parent-2::before {
@@ -394,7 +393,7 @@ a:hover:not(.department-link):not(.child-link) {
     position: absolute;
     top: 157px;
     right: 199px;
-    width: 192px;
+    width: 155px;
     height: 2px;
     background-color: #aa3c24;
 }
@@ -429,22 +428,24 @@ a:hover:not(.department-link):not(.child-link) {
     background-color: #aa3c24;
 }
 
-.general-child-link::after {
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: -12px;
-    height: 70px;
-    width: 2px;
-    background-color: #aa3c24;
-}
+/*
+        .general-child-link::after {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: -12px;
+            height: 70px;
+            width: 2px;
+            background-color: #aa3c24;
+        }
+*/
 
 .child-2::before {
     content: "";
     position: absolute;
     top: -95px;
     right: -29px;
-    width: 161px;
+    width: 406px;
     height: 2px;
     background-color: #aa3c24;
 }
@@ -452,7 +453,7 @@ a:hover:not(.department-link):not(.child-link) {
 .vice-rector-2::after {
     content: "";
     position: absolute;
-    top: -37px;
+    top: -20px;
     right: 40px;
     width: 295px;
     height: 2px;
@@ -462,9 +463,9 @@ a:hover:not(.department-link):not(.child-link) {
 .vice-rector-4::after {
     content: "";
     position: absolute;
-    top: 32px;
+    top: -38px;
     left: -12px;
-    height: 742px;
+    height: 757px;
     width: 2px;
     background-color: #aa3c24;
 }
