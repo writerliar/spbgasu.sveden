@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/centurygothic/CenturyGothic.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #747474;
+    background-image: url(img/background-pattern.png);
+}
+
+a {
+    color: #aa3c24;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    text-decoration: underline;
+}
+
+/*
+a:visited {
+    color: #357f93;
+}
+*/
+
+.main-wrapper {
+    width: 100%;
+    max-width: 961px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-wrapper {
+    padding-left: 31px;
+    padding-top: 9px;
+    padding-right: 28px;
+    padding-bottom: 14px;
+    margin-right: 27px;
+    margin-left: 37px;
+    z-index: 2;
+    min-width: 136px;
+    max-height: 152px;
+    -webkit-box-shadow: 0px 0px 22px -1px #c4c4c4;
+    box-shadow: 0px 0px 22px -1px #c4c4c4;
+    background-image: url(../img/background-pattern.png);
+    border-radius: 0 0 6px 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.comeback {
+    margin: 0;
+    text-align: center;
+    font-family: "Century Gothic", Arial, sans-serif;
+    color: #aa3c24;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: ;
+}
+
+.image {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 30px solid #357f93;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    border: 15px solid;
+    -webkit-border-image: -webkit-linear-gradient(315deg, #D46D57 38%, #aa3c24 65%);
+         -o-border-image: -o-linear-gradient(315deg, #D46D57 38%, #aa3c24 65%);
+            border-image: linear-gradient(135deg, #D46D57 38%, #aa3c24 65%);
+    border-image-slice: 1;
+}
+
+
+.text-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: ;
+            box-shadow: ;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 3px #cccccc;
+            box-shadow: 0 0 3px #cccccc;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.text-wrapper::before,
+.text-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    bottom: 15px;
+    width: 45%;
+    max-width: 300px;
+    background-color: #dddddd;
+    -webkit-box-shadow: 0 15px 10px #555555;
+            box-shadow: 0 15px 10px #555555;
+}
+
+.text-wrapper::before {
+    left: 10px;
+
+    /*Задание*/
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    z-index: -1;
+}
+
+.text-wrapper::after {
+    right: 10px;
+
+    /*Задание*/
+    -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+    z-index: -1;
+}
+
+.text-wrapper p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    min-height: 301px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 2;    
+    border: 15px solid #ffffff;
+    -webkit-box-shadow: -1px 2px 9px 2px #cccccc;
+            box-shadow: -1px 2px 9px 2px #cccccc;
+    background-image: url("img/map.JPG");
+}

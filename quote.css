@@ -1,0 +1,46 @@
+.quote {
+  margin: 0;
+  color: #333334;
+  padding: 20px 30px;
+  position: relative;
+  border-left: 25px solid #aa3c24;
+  font-family: 'Arial', sans-serif;
+}
+
+.quote:before {
+  content: "\201C";
+  font-family: serif;
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 1px 2px 0 #747474;
+}
+
+.quote-text {
+  margin: 0 0 16px;
+  font-size: 11pt;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.quote-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quote-author {
+  margin-right: 20px;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: 600;
+  text-align: right;
+}
+
+.quote-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
